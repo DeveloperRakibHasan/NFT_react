@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer components {
+  h1 {
+    font-size: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  h2 {
+    font-size: 35px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  h4 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
+  h5 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  h6 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav-text-grd{
+    background: linear-gradient(182.13deg, #CF74FF -0.01%, #1B59ED 148.42%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+  }
+ .button-bg{
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+ }
+ .icon-grd{
+  color:gradient(182.13deg, #CF74FF -0.01%, #1B59ED 148.42%);
+  }
+ .nav-link{
+  margin-right: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 1;
+ }
+ .nav-link ul {
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+    width: 100px;
+}
+ .active-dropdown {
+  top: 50px!important;
+  opacity: 1!important;
+  visibility: visible!important;
+}
+ .d-none{
+  position:absolute;
+  top: -100px;
+  visibility: hidden;
+  opacity: 0;
+ }
+ .slider-dark-bg-grd{
+  background-color: #171721;
+ }
+ .font-redhet{
+  font-family: 'Red Hat Display', sans-serif;
+ }
+ .font-roboto{
+  font-family: 'Roboto', sans-serif;
+ }
+ .search_input{
+   padding-left:10px;
+   padding-right:10px;
+   background: #26262F;
+   padding-top:4px;
+   padding-bottom:4px;
+   outline:none;
+   font-family: 'Roboto', sans-serif;
+   border-radius:10px;
+   position: relative;
+   left:20px;
+   width: 40px;
+   visibility: hidden
+ }
+ .search-active{
+  visibility: visible;
+  width:200px;
+ }
+ .nth-position:nth-child(2),
+ .nth-position:nth-child(4) {
+  margin-top: -90px;
+ }
+ .bg-gradient-1{
+  background: linear-gradient(180.19deg, rgba(255, 255, 255, 0.072) -7.47%, rgba(255, 255, 255, 0) 104.33%);
+ }
+ .bg-gradient-2{
+  background: radial-gradient(78.81% 78.81% at 67.44% 21.19%, rgba(207, 116, 255, 0.15) 0%, rgba(67, 123, 255, 0.15) 47.4%, rgba(50, 222, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(200px);
+ }
+
+
 }
