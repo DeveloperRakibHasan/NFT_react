@@ -1,0 +1,26 @@
+.bobble{
+    position:relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+    z-index:10;
+    animation: animate 10s linear infinite;
+}
+.bobble1{
+    animation: animate 15s linear infinite;
+}
+.bobble2{
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(.5);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+ 
+    
+}

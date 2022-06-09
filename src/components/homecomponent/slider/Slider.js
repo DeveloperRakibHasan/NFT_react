@@ -8,7 +8,7 @@ function Slider() {
       <div>
         <div className='container'>
             <div className='w-full grid grid-flow-row grid-cols-2'>
-              <div>
+              <div className='relative z-10'>
                 <div className='pt-[180px] w-[570px]'>
                 <span className='z-10 relative after:absolute after:bg-gradient-2 after:w-[700px] after:h-[700px] after:rounded-full after:mt-[-550px] after:ml-[-300px]'></span>
                   <h1 className='text-[72px] font-bold text-white leading-[90px] mb-5 font-redhet'>Create and sell your <span className='nav-text-grd'>NFTs</span> Collection</h1>

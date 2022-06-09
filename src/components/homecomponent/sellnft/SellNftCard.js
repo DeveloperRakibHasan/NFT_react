@@ -4,7 +4,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 function SellNftCard(props) {
   return (
     <>
-        <div className='p-8 bg-[#232738] rounded-2xl '>
+        <div className='p-8 bg-[#232738] rounded-2xl hover:bg-[#1F2332] duration-150 '>
             <div className='flex justify-between mb-10'>
                 <span><img src={props.img} alt="" /></span>
                 <p className='text-[#3F4456] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[40px]'>{props.stepnum}</span> </p>

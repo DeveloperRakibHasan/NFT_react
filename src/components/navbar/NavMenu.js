@@ -7,9 +7,10 @@ function NavMenu() {
     const [showItem1, setShowItem1] = useState(false)
     const [showItem2, setShowItem2] = useState(false)
     const [showItem3, setShowItem3] = useState(false)
+
   return (
     <>
-        <div className='z-[99999]'>
+        <div className='z-[9999]'>
             <div className='container'>
                 <div className='flex py-4 items-center float-left'>
                 <div className='mr-[84px] pt-[4px]'>
@@ -43,7 +44,7 @@ function NavMenu() {
                                 Pages
                                 <FaAngleDown className='ml-1 font-extralight' />
                             </Link>
-                            <ul className={showItem2 ?'active-dropdown duration-200':'d-none'}>
+                            <ul className={showItem2 ?'active-dropdown duration-200':'d-none' }>
                                 <li className='my-1'><Link>Pages 1</Link></li>
                                 <li className='my-1'><Link>Pages 2</Link></li>
                                 <li className='my-1'><Link>Pages 3</Link></li>

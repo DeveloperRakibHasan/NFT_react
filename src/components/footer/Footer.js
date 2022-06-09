@@ -42,16 +42,16 @@ function Footer() {
                         <h4 className='text-white mb-10'>Subscribe to our Newsletter</h4>
                         <p className='text-[#7D8694] mb-6'>Ac tristique sem nisi, at mauris. Sit sed porta eget tincidunt ut morbi erat nibh.</p>
                     </div>
-                    <div>
-                        <input className="bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl" type="email" placeholder="Enter your Email" />
+                    <div className='flex items-center'>
+                        <input className="bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl focus:outline-none focus:placeholder:text-white" type="email" placeholder="Enter your Email" />
                         <button className=' px-4 py-[10px] rounded-r-xl button-bg font-medium text-white leading-7'>Subscribe</button>
                     </div>
                     <div>
-                        <ul className='flex mt-6'>
-                            <li className='mr-2'><FaFacebook/></li>
-                            <li className='mr-2'><FaTwitter /></li>
-                            <li className='mr-2'><FaInstagram /></li>
-                            <li className='mr-2'><FaLinkedin /></li>
+                        <ul className='flex mt-10'>
+                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-500'><FaFacebook/></li>
+                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-400'><FaTwitter /></li>
+                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-[#E80053]'><FaInstagram /></li>
+                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-900'><FaLinkedin /></li>
                         </ul>
                     </div>
                 </div>
