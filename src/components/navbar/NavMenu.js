@@ -10,9 +10,9 @@ function NavMenu() {
 
   return (
     <>
-        <div className='z-[9999]'>
+        <div className='z-[99999] relative'>
             <div className='container'>
-                <div className='flex py-4 items-center float-left'>
+               <div className='flex py-4 items-center float-left'>
                 <div className='mr-[84px] pt-[4px]'>
                     <Link to="/"><span className='font-bold font-roboto text-[26px] nav-text-grd'>Company.</span></Link>
                 </div>

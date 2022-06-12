@@ -1,13 +1,16 @@
 import React from 'react'
 import SellNftCard from './SellNftCard'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function SellNft() {
+    AOS.init();
   return (
    <>
    <div className='py-[120px]'>
     <div className='container'>
             <div className='mb-10'>
-                <h2 className='text-[48px] text-center text-white font-redhet font-bold flex justify-center'>Easy to Create and sell <br></br> your NFTs</h2>
+                <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" className='text-[48px] text-center text-white font-redhet font-bold flex justify-center'>Easy to Create and sell <br></br> your NFTs</h2>
             </div>
             <div className='grid grid-flow-row grid-cols-4 gap-7'>
                 <SellNftCard 

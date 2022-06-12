@@ -62,7 +62,7 @@ function AntqCards(props) {
   return (
     <>
         <div className='w-[270px] bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
-            <div className='w-full h-[220px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
+            <div className=' w-full h-[220px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
@@ -70,7 +70,7 @@ function AntqCards(props) {
               <li className=' px-2 py-1 hover:bg-[#f00] rounded-md hover:text-white'><button onClick={deleted}>Delete</button></li>
             </ul>
             </div>
-              <div className='grid grid-flow-row grid-cols-4 relative h-full mx-auto items-end text-white px-4 bottom-2'>
+              <div className='text-center grid grid-flow-row grid-cols-4 relative h-full mx-auto items-end text-white px-4 bottom-2'>
                 <div>
                   <div className='font-bold text-[18px]'>{state.days || '0'}</div>
                   <small>Days</small>

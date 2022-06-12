@@ -5,7 +5,7 @@ function AntiqCard() {
   return (
     <>
         <div className='bg-gradient-1 w-[600px] rounded-[30px] top-[140px] right-[60px] z-0 h-full absolute'></div>
-        <div className='grid grid-flow-row grid-cols-2 gap-8 float-right mb-10 z-10 relative'>
+        <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" className='grid grid-flow-row grid-cols-2 gap-8 float-right mb-10 z-10 relative'>
             <AntqCards
             title="Antique"
             rate="0.234wETH"

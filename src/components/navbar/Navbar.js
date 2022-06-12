@@ -4,6 +4,7 @@ import NavMenu from './NavMenu'
 function Navbar() {
   return (
     <>
+
        <NavMenu /> 
     </>
   )

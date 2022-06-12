@@ -28,7 +28,7 @@ function NavSearch() {
         <h4 className='font-redhet mb-10 font-semibold'>Login your Account</h4>
           <input required className='w-full focus:outline-none focus:placeholder:text-black mb-5 bg-gray-100 px-10 py-4 rounded-md ' type="email" name="email" placeholder="Enter your Email" />
           <input required className='w-full mb-5 focus:outline-none focus:placeholder:text-black bg-gray-100 px-10 py-4 rounded-md '  type="password" name="email" placeholder="Enter your password" />
-          <button type="submit" className='px-4 w-full text-center py-3 rounded-xl button-bg font-medium text-white leading-7' >LogIN</button>
+          <button type="submit" className='px-4 w-full text-center py-3 rounded-xl button-bg font-medium text-white leading-7'>LogIN</button>
         <p className='mt-8'>You don't have any account? <Link className="ml-2 text-blue-400">Sign Up</Link> </p>
         </div>
         </div>

@@ -3,8 +3,8 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Artiests from './Artiests';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
+// import "swiper/css/pagination";
+// import { Pagination } from "swiper";
 
 function Artiest() {
   return (
@@ -17,8 +17,8 @@ function Artiest() {
         <Swiper
         spaceBetween={20}
         slidesPerView={4}
-        pagination={true}
-        modules={[Pagination]}
+        // pagination={true}
+        // modules={[Pagination]}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
@@ -71,7 +71,6 @@ function Artiest() {
           price="$2000,000"
         />
       </SwiperSlide>
-      ...
     </Swiper>   
     </div>
   )

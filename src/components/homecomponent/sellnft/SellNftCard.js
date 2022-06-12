@@ -1,10 +1,19 @@
 import React from 'react'
 import { BsArrowRightShort } from "react-icons/bs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function SellNftCard(props) {
+  AOS.init();
   return (
     <>
-        <div className='p-8 bg-[#232738] rounded-2xl hover:bg-[#1F2332] duration-150 '>
+        <div data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-delay="100"
+            data-aos-offset="500"
+            data-aos-duration="1500" 
+            className='p-8 bg-[#232738] rounded-2xl hover:bg-[#1F2332] duration-150'
+            >
             <div className='flex justify-between mb-10'>
                 <span><img src={props.img} alt="" /></span>
                 <p className='text-[#3F4456] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[40px]'>{props.stepnum}</span> </p>

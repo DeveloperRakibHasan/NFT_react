@@ -1,8 +1,15 @@
 import React from 'react'
+import AboutUs from '../aboutpage/AboutUs'
+import Founder from '../aboutpage/Founder'
+import Nftfasality from '../aboutpage/Nftfasality'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+      <AboutUs />
+      <Founder />
+      <Nftfasality />
+    </>
   )
 }
 

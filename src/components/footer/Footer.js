@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Copyright from './Copyright';
 
 function Footer() {
   return (
@@ -57,6 +58,7 @@ function Footer() {
                 </div>
             </div>
         </div>
+        <Copyright />
     </div>
     </>
   )
