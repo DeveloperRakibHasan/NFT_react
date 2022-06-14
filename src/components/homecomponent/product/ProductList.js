@@ -1,19 +1,26 @@
 import React from 'react'
 import ProductCard from './ProductCard'
-
+import img1 from '../../../assets/img/micon/1.png'
+import img2 from '../../../assets/img/micon/2.png'
+import img3 from '../../../assets/img/micon/3.png'
+import img4 from '../../../assets/img/micon/4.png'
+import img5 from '../../../assets/img/micon/5.png'
+import img6 from '../../../assets/img/micon/6.png'
+ 
 
 function ProductList() {
+
   return (
     <>
         <div className='grid grid-flow-row grid-cols-4 gap-8'>
           <div className="col-start-1 col-span-1 row-start-1 row-span-2">
-            <ul className="mt-10">
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>All</li>
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>Games</li>
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>Music</li>
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>Art</li>
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>Photograph</li>
-              <li className='py-3 text-[20px] rounded-xl px-8 hover:button-bg text-white'>Domain</li>
+            <ul className="mt-10 w-fit">
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img1} alt='' /> All</li>
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img2} alt='' />Games</li>
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img3} alt='' />Music</li>
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img4} alt='' />Art</li>
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img5} alt='' />Photograph</li>
+              <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img6} alt='' />Domain</li>
             </ul>
           </div>
           <ProductCard

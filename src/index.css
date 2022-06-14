@@ -49,6 +49,9 @@ text-fill-color: transparent;
  .button-bg{
   background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
  }
+ .nft-card-bg{
+  background: linear-gradient(183.54deg, rgba(207, 116, 255, 0.7) -74.74%, rgba(27, 89, 237, 0.7) 236.1%);
+ }
  .icon-grd{
   color:gradient(182.13deg, #CF74FF -0.01%, #1B59ED 148.42%);
   }
@@ -60,6 +63,9 @@ text-fill-color: transparent;
   font-family: 'Roboto', sans-serif;
   position: relative;
   z-index: 1;
+ }
+ .active-nav{
+ color: #7566F6;
  }
  .nav-link ul {
     color: #fff;
@@ -101,6 +107,11 @@ text-fill-color: transparent;
  }
  .slider-dark-bg-grd{
   background-color: #171721;
+ }
+ .img-border{
+ border: 16px;
+ color: ##3F454E;
+ border-radius: 36px;
  }
  .font-redhet{
   font-family: 'Red Hat Display', sans-serif;

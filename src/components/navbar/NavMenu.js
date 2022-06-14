@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaAngleDown } from "react-icons/fa";
 import NavSearch from './NavSearch';
 
@@ -7,6 +7,8 @@ function NavMenu() {
     const [showItem1, setShowItem1] = useState(false)
     const [showItem2, setShowItem2] = useState(false)
     const [showItem3, setShowItem3] = useState(false)
+    
+
 
   return (
     <>
@@ -16,25 +18,25 @@ function NavMenu() {
                 <div className='mr-[84px] pt-[4px]'>
                     <Link to="/"><span className='font-bold font-roboto text-[26px] nav-text-grd'>Company.</span></Link>
                 </div>
-                <nav>
+                <nav id='nav'>
                     <ul className='flex pt-[7px]'>
-                        <li className='nav-link'>
-                            <Link to="/">
+                        <li>
+                            <NavLink exact to="/" className='nav-link' activeClassName='nav-link active-nav'>
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
-                        <li className='nav-link'>
-                            <Link to="/about">
+                        <li>
+                            <NavLink exact to="/about" className="nav-link"  activeClassName='nav-link active-nav'>
                                 About Us
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-link' onClick={()=>setShowItem1(!showItem1)}>
-                            <Link className='flex items-center'>
+                            <Link className='items-center flex'>
                                 Explore
                                 <FaAngleDown className='ml-1 font-extralight' />
                             </Link>
                             <ul className={showItem1 ?'active-dropdown duration-200':'d-none'}>
-                                <li className='my-1'><Link>Explore 1</Link></li>
+                                <li className='my-1'><Link to='/explore'>Product</Link></li>
                                 <li className='my-1'><Link>Explore 2</Link></li>
                                 <li className='my-1'><Link>Explore 3</Link></li>
                             </ul>
@@ -62,9 +64,9 @@ function NavMenu() {
                             </ul>
                         </li>
                         <li className='nav-link mr-0'>
-                            <Link to="/contact">
+                            <NavLink exact to="/contact" className='nav-link mr-0'  activeClassName='nav-link active-nav'>
                                 Contact
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>

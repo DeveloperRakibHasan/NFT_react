@@ -5,9 +5,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 // import "swiper/css/pagination";
 // import { Pagination } from "swiper";
+import '../../css/bobble.css'
+
 
 function Artiest() {
   return (
+    <>
+    <div className='-z-0 grid grid-flow-row grid-cols-3 ml-20 relative'>
+    <span className=' bobble '></span>
+    <span className=' bobble bobble1'></span>
+    <span className=' bobble bobble2'></span>
+    </div>
+
     <div className='container'>
         <div className='flex justify-between mt-[100px] mb-10'>
             <h4 className='text-[36px] text-white font-roboto'>Top Artist</h4>
@@ -73,6 +82,7 @@ function Artiest() {
       </SwiperSlide>
     </Swiper>   
     </div>
+    </>
   )
 }
 

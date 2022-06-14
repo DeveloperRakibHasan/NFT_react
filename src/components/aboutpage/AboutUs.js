@@ -14,7 +14,7 @@ function AboutUs() {
                     <img className='mt-[-50px]' src={linkimg} alt='' />
                     <div className='ml-[200px]'>
                         <h2 className='text-[44px] text-white mb-5'>About us</h2>
-                        <p className='text-gray-500 leading-7 mb-14'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.elementum nulla turpis in nunc.</p>
+                        <p className='text-gray-500 leading-7 mb-10'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.elementum nulla turpis in nunc.</p>
                         <p className='text-gray-500 leading-7'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.Pulvinar nunc</p>
                         <div className='mt-14 flex'>
                             <div className='flex items-center pr-10 mr-10 border-r-slate-700 border-r'>

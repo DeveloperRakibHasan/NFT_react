@@ -66,8 +66,8 @@ function AntqCards(props) {
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
-              <li className='mb-1 px-2 py-1 hover:bg-[#7D68F7] rounded-md hover:text-white'><button onClick={save} >Saved</button></li>
-              <li className=' px-2 py-1 hover:bg-[#f00] rounded-md hover:text-white'><button onClick={deleted}>Delete</button></li>
+              <li className='mb-1 px-2 py-1 hover:bg-[#7D68F7] rounded-md hover:text-white'><button>Saved</button></li>
+              <li className=' px-2 py-1 hover:bg-[#f00] rounded-md hover:text-white'><button>Delete</button></li>
             </ul>
             </div>
               <div className='text-center grid grid-flow-row grid-cols-4 relative h-full mx-auto items-end text-white px-4 bottom-2'>

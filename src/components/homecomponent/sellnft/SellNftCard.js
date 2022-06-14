@@ -8,10 +8,8 @@ function SellNftCard(props) {
   return (
     <>
         <div data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-delay="100"
-            data-aos-offset="500"
-            data-aos-duration="1500" 
+            data-aos-delay="300"
+           data-aos-duration="1500" 
             className='p-8 bg-[#232738] rounded-2xl hover:bg-[#1F2332] duration-150'
             >
             <div className='flex justify-between mb-10'>
