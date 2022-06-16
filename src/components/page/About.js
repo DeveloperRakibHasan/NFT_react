@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutUs from '../aboutpage/AboutUs'
 import Founder from '../aboutpage/Founder'
+import AboutSlider from '../aboutpage/AboutSlider'
 import Nftfasality from '../aboutpage/Nftfasality'
 import NftCard from '../aboutpage/NftCard'
 import Footer from '../footer/Footer'
@@ -12,6 +13,7 @@ function About() {
       <AboutUs />
       <Sucess />
       <Founder />
+      <AboutSlider />
       <Nftfasality />
       <NftCard />
       <Footer />

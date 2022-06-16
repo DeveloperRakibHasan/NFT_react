@@ -11,7 +11,7 @@ function Slider() {
   return (
     <>
       <div className='relative z-10'>
-
+      
       <div className='z-0 grid grid-flow-row grid-cols-3 ml-20'>
         <span className=' bobble '></span>
         <span className=' bobble bobble1'></span>

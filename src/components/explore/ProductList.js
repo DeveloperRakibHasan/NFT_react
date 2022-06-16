@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductCard from './ProductCard'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import img1 from '../../assets/img/micon/1.png'
 import img2 from '../../assets/img/micon/2.png'
 import img3 from '../../assets/img/micon/3.png'
@@ -21,31 +21,31 @@ function ProductList() {
   
     },
     {
-      id: 1,
-      title: 'Antique',
-      rate: '0.234wETH',
+      id: 2,
+      title: 'Antique1',
+      rate: '0.235wETH',
       dis: 'Highest bid 1/20',
       image: require('../../assets/img/3/2.png'),
   
     },
     {
-      id: 1,
-      title: 'Antique',
-      rate: '0.234wETH',
+      id: 3,
+      title: 'Antique2',
+      rate: '0.236wETH',
       dis: 'Highest bid 1/20',
       image: require('../../assets/img/3/3.png'),
   
     },
     {
-      id: 1,
-      title: 'Antique',
+      id: 4,
+      title: 'Antique3',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
       image: require('../../assets/img/3/4.png'),
   
     },
     {
-      id: 1,
+      id: 5,
       title: 'Antique',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
@@ -53,7 +53,7 @@ function ProductList() {
   
     },
     {
-      id: 1,
+      id: 6,
       title: 'Antique',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
@@ -61,7 +61,7 @@ function ProductList() {
   
     },
     {
-      id: 1,
+      id: 7,
       title: 'Antique',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
@@ -69,7 +69,7 @@ function ProductList() {
   
     },
     {
-      id: 1,
+      id: 8,
       title: 'Antique',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
@@ -77,7 +77,7 @@ function ProductList() {
   
     },
     {
-      id: 1,
+      id: 9,
       title: 'Antique',
       rate: '0.234wETH',
       dis: 'Highest bid 1/20',
@@ -88,6 +88,10 @@ function ProductList() {
   ]
 
   return (
+
+    
+
+
     <>
         <div className='grid grid-flow-row grid-cols-4 gap-8'>
           <div className="col-start-1 col-span-1 row-start-1 row-span-3">
@@ -104,9 +108,7 @@ function ProductList() {
           {productArray.map((item,id)=>{
             return(
               <div key={item.id}>
-                <Link to={`/explore/${id}`}>
-                <ProductCard title={item.title} rate={item.rate} dis={item.dis} bgImage={item.image}/>
-                </Link>
+                  <ProductCard singleProductLink={item.id} title={item.title} rate={item.rate} dis={item.dis} bgImage={item.image} item={item} key={item.id+id}/>
               </div>
             )
           })}

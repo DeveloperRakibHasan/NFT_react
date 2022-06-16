@@ -2,7 +2,7 @@ import React from 'react'
 
 function NftCard() {
   return (
-    <div className='slider-dark-bg-grd py-[100px]'>
+    <div className='bg-[#111826] py-[100px]'>
         <div className='container'>
         <div className='flex justify-center'>
             <div className='w-7/12 h-full py-[72px] px-[200px] rounded-[35px] nft-card-bg'>

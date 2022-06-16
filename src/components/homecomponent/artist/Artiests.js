@@ -3,7 +3,7 @@ import { TbCurrencyDollar } from "react-icons/tb";
 
 function Artiests(props) {
   return (
-    <div className='flex items-center bg-[#232738] rounded-[30px] w-[320px] p-3'>
+    <div className='flex items-center bg-[#232738] rounded-[30px] w-[320px] mb-14 p-3'>
         <div>
             <img src={props.img} alt="" />
         </div>

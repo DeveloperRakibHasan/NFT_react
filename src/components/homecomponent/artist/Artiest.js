@@ -3,8 +3,8 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Artiests from './Artiests';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import "swiper/css/pagination";
-// import { Pagination } from "swiper";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 import '../../css/bobble.css'
 
 
@@ -26,10 +26,8 @@ function Artiest() {
         <Swiper
         spaceBetween={20}
         slidesPerView={4}
-        // pagination={true}
-        // modules={[Pagination]}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        pagination={true}
+        modules={[Pagination]}
         >
       <SwiperSlide>
        <Artiests 

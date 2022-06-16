@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+@layer base {
+  @apply
+}
+
 @layer components {
   h1 {
     font-size: 40px;
@@ -95,22 +99,32 @@ text-fill-color: transparent;
    border-radius: 8px;
    color: #000;
    top: -10px;
+   margin-left: -20px;
    opacity: 0;
    visibility: hidden;
  }
  .active-dots{
    position:absolute;
+   margin-left: -20px;
     top: 40px;
     opacity: 1;
     visibility: visible;
 
  }
+ .about-slider-bg{
+  background: linear-gradient(179.2deg, rgba(255, 255, 255, 0.15) -43.41%, rgba(255, 255, 255, 0) 99.31%);
+backdrop-filter: blur(65px);}
  .slider-dark-bg-grd{
   background-color: #171721;
  }
+#upload-photo{
+opacity: 0;
+z-index: -1;
+position: absolute;
+}
  .img-border{
  border: 16px;
- color: ##3F454E;
+ color: #3F454E;
  border-radius: 36px;
  }
  .font-redhet{
@@ -148,5 +162,15 @@ text-fill-color: transparent;
   background: radial-gradient(78.81% 78.81% at 67.44% 21.19%, rgba(207, 116, 255, 0.15) 0%, rgba(67, 123, 255, 0.15) 47.4%, rgba(50, 222, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   filter: blur(200px);
  }
+
+ 
+
+
+
+
+ // Responsive 
+
+ //Navbar 
+
 
 }

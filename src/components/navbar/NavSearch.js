@@ -15,7 +15,7 @@ function NavSearch() {
           <button onClick={()=> setActive(!active)} className=' absolute ml-[-10px] mt-[6px]'><FiSearch className={active?' font-semibold text-[20px] text-[#fff] duration-150 leading-7 ':' font-semibold text-[20px] text-[#566FFE] leading-7'} /></button>
         </div>
         <div className='mr-9'>
-            <span className='flex font-medium text-[#566FFE] cursor-pointer'>Upload <HiOutlineUpload className='ml-2 text-[20px]' /></span>
+            <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 text-[20px]' /></span>
         </div>
         <div>
             <button onClick={()=> setLogin(!login)} className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7'>Connect Wallet</button>

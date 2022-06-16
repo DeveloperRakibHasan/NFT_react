@@ -3,7 +3,7 @@ import nftfasl from '../../assets/img/about/fas.png'
 
 function Nftfasality() {
   return (
-    <div className='py-[100px] slider-dark-bg-grd'>
+    <div className='py-[100px] bg-[#111826]'>
         <div className='container'>
             <div className='grid grid-flow-row grid-cols-2 gap-10'>
                 <div>

@@ -4,7 +4,7 @@ import linkimg from '../../assets/img/a.png'
  
 function AboutUs() {
   return (
-    <div className='slider-dark-bg-grd w-full h-full py-[100px]'>
+    <div className='bg-[#111826] w-full h-full py-[100px]'>
         <div className='container'>
             <div className='grid grid-flow-row grid-cols-2'>
                 <div className='w-[570px] h-full bg-gradient-1 rounded-[30px]'>

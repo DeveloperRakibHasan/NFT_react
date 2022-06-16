@@ -6,7 +6,7 @@ import founder4 from '../../assets/img/about/2/4.png'
 
 function Founder() {
   return (
-    <div className='slider-dark-bg-grd w-full h-full py-[100px]'>
+    <div className='bg-[#111826] w-full h-full py-[100px]'>
         <div className='container'>
             <h4 className='text-white mb-14 text-[40px]'>Founder</h4>
             <div className='grid grid-flow-row grid-cols-4 gap-8 justify-center'>

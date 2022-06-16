@@ -11,26 +11,26 @@ function ContactFrom() {
         <div className='w-10/12 h-full mx-auto flex items-center mt-20'>
             <form className='w-7/12 bg-[#232738] rounded-[30px] p-10'>
                 <h4 className='mb-6 text-white'>Send us message</h4>
-                <div className='grid grid-flow-row grid-cols-2 gap-7'>
+                <div className='grid grid-flow-row grid-cols-2 gap-5'>
                 <div className='mb-4'>
                     <span className='block font-semibold text-white mb-4'>Your Name</span>
-                    <input className='p-3 bg-[#171721] rounded-xl w-full' type='text' placeholder='type your name' name='name' />
+                    <input className='p-3 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your name' name='name' />
                 </div>
                 <div className='mb-4'>
                     <span className='block font-semibold mb-4 text-white'>Your Email</span>
-                    <input className='p-3 bg-[#171721] rounded-xl w-full' type='text' placeholder='type your email' name='name' />
+                    <input className='p-3 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your email' name='name' />
                 </div>
                 <div className='mb-4'>
                     <span className='block font-semibold mb-4 text-white'>Subject</span>
-                    <input className='p-3 bg-[#171721] rounded-xl w-full' type='text' placeholder='chooce your subject' name='name' />
+                    <input className='p-3 bg-[#111826] rounded-xl w-full' type='text' placeholder='chooce your subject' name='name' />
                 </div>
                 <div className='mb-4'>
                     <span className='block font-semibold mb-4 text-white'>Select Country</span>
-                    <input className='p-3 bg-[#171721] rounded-xl w-full' type='text' placeholder='select your country' name='name' />
+                    <input className='p-3 bg-[#111826] rounded-xl w-full' type='text' placeholder='select your country' name='name' />
                 </div>
                 <div className='col-span-2'>
                     <span className='block font-semibold mb-4 text-white'>Message</span>
-                    <textarea className='p-3 h-[140px] resize-none bg-[#171721] rounded-xl w-full' type='text' placeholder='type your message' name='name' />
+                    <textarea className='p-3 h-[140px] resize-none bg-[#111826] rounded-xl w-full' type='text' placeholder='type your message' name='name' />
                 </div>
                 </div>
                 <div className='flex justify-between items-center mt-12'>

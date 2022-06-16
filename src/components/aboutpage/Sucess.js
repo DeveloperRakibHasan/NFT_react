@@ -6,7 +6,7 @@ import icon4 from '../../assets/img/about/4/4.png'
 
 function Sucess() {
   return (
-    <div className='py-[100px] slider-dark-bg-grd'>
+    <div className='py-[100px] bg-[#111826]'>
         <div className='container'>
             <h2 className='text-white mb-20 text-center'>Our mission is healping people <br></br> to get success</h2>
             <div className='grid grid-flow-row grid-cols-4 gap-8'>

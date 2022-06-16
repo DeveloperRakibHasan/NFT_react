@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Antique",
+        "rate": "0.234wETH",
+        "dis":" Highest bid 1/20",
+        "image": "require('../../assets/img/3/1.png')",
+    
+      },
+      {
+        "id": 2,
+        "title": "Antique11",
+        "rate": "0.234wETH",
+        "dis":" Highest bid 1/20",
+        "image": "require('../../assets/img/3/1.png')",
+    
+      },
+    ]

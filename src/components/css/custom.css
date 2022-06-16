@@ -1,0 +1,9 @@
+.swiper-pagination-bullet{
+    background: #7D8694;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.swiper-pagination-bullet-active{
+    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
+}

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,7 +9,7 @@ import "swiper/css/thumbs";
 
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { FreeMode, Thumbs } from "swiper";
 
 import sliderImg from '../../../assets/img/singlepdi/1.png'
 import sliderImg1 from '../../../assets/img/singlepdi/2.png'
@@ -32,13 +32,13 @@ export default function SingleProductSlider() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img className="w-[540px] h-[470px]" src={sliderImg} alt='' />
+          <img className="w-[570px] h-[500px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-[540px] h-[470px]" src={sliderImg1} alt='' />
+          <img className="w-[570px] h-[500px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg1} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-[540px] h-[470px]" src={sliderImg2} alt='' />
+          <img className="w-[570px] h-[500px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg2} alt='' />
         </SwiperSlide>
         
       </Swiper>
@@ -52,15 +52,15 @@ export default function SingleProductSlider() {
         className="mySwiper mt-10 mb-[100px]"
       >
         <SwiperSlide>
-          <img src={sliderImg} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] h-[120px] rounded-[20px]" src={sliderImg} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img src={sliderImg1} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] h-[120px] rounded-[20px]" src={sliderImg1} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img src={sliderImg2} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] h-[120px] rounded-[20px]" src={sliderImg2} alt='' />
         </SwiperSlide>
         
       </Swiper>
