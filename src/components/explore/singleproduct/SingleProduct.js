@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SingleProductSlider from './SingleProductSlider'
 import RecentView from './RecentView'
 import BidComponent from './BidComponent'
@@ -6,30 +6,30 @@ import BidHistory from './BidHistory'
 import Footer from '../../footer/Footer'
 import abc from '../../../assets/img/2/1.png'
 import abc2 from '../../../assets/img/2/2.png'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 function SingleProduct() {
 
-const {id }= useParams();
+// const {id }= useParams();
 
-const [data, setdata] = useState([]);
+// const [data, setdata] = useState([]);
 
-const [users, setUsers] = useState([{}]);
+// const [users, setUsers] = useState([{}]);
 
-useEffect(()=>{
-    fetch (`./product.json`)
-    .then((resp)=> resp.json())
-    .then((dt) => setdata(dt)) 
+// useEffect(()=>{
+//     fetch (`./product.json`)
+//     .then((resp)=> resp.json())
+//     .then((dt) => setdata(dt)) 
    
 
-},[data])
+// },[data])
 
-useEffect(()=>{
-    const abc = data.filter((d)=> d.id === id);
+// useEffect(()=>{
+//     const abc = data.filter((d)=> d.id === id);
 
-    setUsers(abc)
+//     setUsers(abc)
 
-},[data, id])
+// },[data, id])
 
 
   return (
@@ -46,18 +46,15 @@ useEffect(()=>{
                         Mattis scelerisque mi lorem eget. Fames .</p>
                 </div>
                 <div>
-                    {
-                        users.map((elem)=> (
 
                         <div>
-                            <h4 className='text-white font-bold text-[36px] font-redhet'>{elem.title}</h4>
+                            <h4 className='text-white font-bold text-[36px] font-redhet'>Qubic digital art</h4>
                             <div className='mt-4 flex'>
                                 <p className='text-[#7D8694]'>Highest bid <span className='text-[#566FFE]'>0.234wETH</span></p>
                                 <p className='ml-6 text-white font-medium'>#27 portal</p>
                             </div>
                         </div>
-                        ))
-                    }
+                         
                     <div className='mt-10'>
                         <div className='flex'>
                             <div>

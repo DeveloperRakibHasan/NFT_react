@@ -3,11 +3,11 @@ import { TbCurrencyDollar } from "react-icons/tb";
 
 function Artiests(props) {
   return (
-    <div className='flex items-center bg-[#232738] rounded-[30px] w-[320px] mb-14 p-3'>
+    <div className='slider-items 2xl:w-[320px] xl:w-[250px]'>
         <div>
             <img src={props.img} alt="" />
         </div>
-        <div className='ml-8'>
+        <div className='2xl:ml-8 xl:ml-6 pr-2'>
             <h4 className='text-white mb-2'>{props.title}</h4>
             <p className='text-blue-500 flex'><span className='button-bg mr-2 w-6 h-6 flex items-center justify-center rounded-full text-white'><TbCurrencyDollar /></span>{props.price}</p>
         </div>

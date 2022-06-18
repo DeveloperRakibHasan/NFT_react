@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 
-@layer base {
-  @apply
-}
-
 @layer components {
   h1 {
     font-size: 40px;
@@ -60,13 +56,8 @@ text-fill-color: transparent;
   color:gradient(182.13deg, #CF74FF -0.01%, #1B59ED 148.42%);
   }
  .nav-link{
-  margin-right: 48px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  z-index: 1;
+  @apply 2xl:mr-12 text-[16px] font-bold text-white font-roboto relative z-[1]
+  xl:mr-7
  }
  .active-nav{
  color: #7566F6;
@@ -136,7 +127,7 @@ position: absolute;
  .search_input{
    padding-left:10px;
    padding-right:10px;
-   background: #26262F;
+   background: #171721;
    padding-top:4px;
    padding-bottom:4px;
    outline:none;
@@ -148,8 +139,9 @@ position: absolute;
    visibility: hidden;
  }
  .search-active{
-  visibility: visible;
-  width:200px;
+  @apply visible 2xl:w-[200px]
+ xl:w-[180px]
+ lg:w-[180px]
  }
  .nth-position:nth-child(2),
  .nth-position:nth-child(4) {
@@ -163,14 +155,23 @@ position: absolute;
   filter: blur(200px);
  }
 
- 
+ .logo{
+  @apply mr-[84px] pt-1
+ }
 
+ .slider-area{
+ @apply w-full grid grid-flow-row 2xl:gap-0 xl:gap-7
+ }
+ .subscribe-text{
+ @apply font-semibold leading-7 text-white flex items-center font-redhet
+ }
+ .slider-items{
+ @apply flex items-center bg-[#232738] rounded-[30px] mb-14 p-3
+ }
 
-
-
- // Responsive 
-
- //Navbar 
+ .card-bg-gradient{
+  @apply bg-gradient-1 rounded-[30px] top-[50px] right-[60px] z-0 h-full absolute
+ }
 
 
 }

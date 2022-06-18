@@ -44,7 +44,7 @@ function Footer() {
                         <p className='text-[#7D8694] mb-6'>Ac tristique sem nisi, at mauris. Sit sed porta eget tincidunt ut morbi erat nibh.</p>
                     </div>
                     <div className='flex items-center'>
-                        <input className="bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl focus:outline-none focus:placeholder:text-white" type="email" placeholder="Enter your Email" />
+                        <input className=" lg:w-[200px] bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl focus:outline-none focus:placeholder:text-white" type="email" placeholder="Enter your Email" />
                         <button className=' px-4 py-[10px] rounded-r-xl button-bg font-medium text-white leading-7'>Subscribe</button>
                     </div>
                     <div>

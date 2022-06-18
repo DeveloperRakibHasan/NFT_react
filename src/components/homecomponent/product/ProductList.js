@@ -12,8 +12,8 @@ function ProductList() {
 
   return (
     <>
-        <div className='grid grid-flow-row grid-cols-4 gap-8'>
-          <div className="col-start-1 col-span-1 row-start-1 row-span-2">
+        <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-3 gap-8'>
+          <div className="col-start-1 col-span-1 row-start-1 xl:row-span-2 lg:row-span-3 ">
             <ul className="mt-10 w-fit">
               <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img1} alt='' /> All</li>
               <li className='flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img2} alt='' />Games</li>

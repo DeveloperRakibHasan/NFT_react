@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react'
 import { GiSelfLove } from "react-icons/gi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
 function AntqCards(props) {
 
-  const save = () => {
-    toast.success("Saved Item.", {
-      position: "top-center",
-      autoClose: 2000,
-  });
-  }
-  const deleted = () => {
-    toast.error("Delete Item.", {
-      position: "top-center",
-      autoClose: 2000,
-  });
-  }
+  // const save = () => {
+  //   toast.success("Saved Item.", {
+  //     position: "top-center",
+  //     autoClose: 2000,
+  // });
+  // }
+  // const deleted = () => {
+  //   toast.error("Delete Item.", {
+  //     position: "top-center",
+  //     autoClose: 2000,
+  // });
+  // }
 
   const [dotsActive, setDotsActive] = useState(false);
   const [fill, setFill]  = useState (false);
@@ -61,8 +61,8 @@ function AntqCards(props) {
 
   return (
     <>
-        <div className='w-[270px] bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
-            <div className=' w-full h-[220px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
+        <div className='xl:w-[270px] lg:w-full bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
+            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
@@ -89,7 +89,7 @@ function AntqCards(props) {
                 </div>
               </div>
             </div>
-            <div className='flex justify-between mt-4 px-5'>
+            <div className='flex justify-between items-center mt-4 px-5'>
                 <b className='text-white text-[18px]'>{props.title}</b>
                 <span className='text-[#566FFE]'>{props.rate}</span>
             </div>

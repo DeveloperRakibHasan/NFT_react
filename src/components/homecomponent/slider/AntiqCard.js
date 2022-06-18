@@ -4,8 +4,8 @@ import AntqCards from './AntqCards'
 function AntiqCard() {
   return (
     <>
-        <div className='bg-gradient-1 w-[600px] rounded-[30px] top-[50px] right-[60px] z-0 h-full absolute'></div>
-        <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" className='grid grid-flow-row grid-cols-2 gap-8 float-right mb-10 z-10 relative'>
+        <div className='card-bg-gradient 2xl:w-[600px] xl:w-[500px]'></div>
+        <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" className='grid grid-flow-row grid-cols-2 xl:gap-8 lg:gap-4 float-right mb-10 z-10 relative'>
             <AntqCards
             title="Antique"
             rate="0.234wETH"

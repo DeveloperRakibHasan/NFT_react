@@ -14,7 +14,7 @@ function NavSearch() {
           <input placeholder='Search..' className={active?'search_input search-active duration-300':'search_input duration-300'} type="text" name="search" />
           <button onClick={()=> setActive(!active)} className=' absolute ml-[-10px] mt-[6px]'><FiSearch className={active?' font-semibold text-[20px] text-[#fff] duration-150 leading-7 ':' font-semibold text-[20px] text-[#566FFE] leading-7'} /></button>
         </div>
-        <div className='mr-9'>
+        <div className='2xl:mr-9 xl:mr-4 lg:mr-3'>
             <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 text-[20px]' /></span>
         </div>
         <div>
