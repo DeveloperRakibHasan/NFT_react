@@ -10,9 +10,9 @@ function SellNft() {
    <div className='py-[120px] overflow-hidden'>
     <div className='container'>
             <div className='mb-10'>
-                <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" className='text-[48px] text-center text-white font-redhet font-bold flex justify-center'>Easy to Create and sell <br></br> your NFTs</h2>
+                <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" className='lg:text-[48px] md:text-[38px] text-center text-white font-redhet font-bold flex justify-center'>Easy to Create and sell <br></br> your NFTs</h2>
             </div>
-            <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-2 gap-7'>
+            <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-7'>
                 <SellNftCard 
                  img={require('../../../assets/img/icon1/1.png')}
                  stepnum="01"

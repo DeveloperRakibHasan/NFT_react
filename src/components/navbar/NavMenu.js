@@ -14,9 +14,9 @@ function NavMenu() {
     <>
         <div className='flex py-4 items-center float-left'>
         <div className='2xl:logo xl:mr-10'>
-            <Link to="/"><span className='font-bold font-roboto text-[26px] nav-text-grd'>Company.</span></Link>
+            <Link to="/"><span className='font-bold font-roboto md:text-[26px] xm:text-[24px] nav-text-grd'>Company.</span></Link>
         </div>
-        <nav className='xl:inline-block lg:hidden md:hidden'>
+        <nav className='xl:inline-block lg:hidden md:hidden sm:hidden xm:hidden'>
             <ul className='flex pt-[7px]'>
                 <li>
                     <NavLink exact to="/" className='nav-link' activeClassName='nav-link active-nav'>

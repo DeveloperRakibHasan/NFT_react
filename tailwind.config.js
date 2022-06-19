@@ -17,15 +17,7 @@ module.exports = {
         DEFAULT: '2rem',
        
       },
-      // screens: {
-      //   xm: '100%',
-      //   sm: '540px',
-      //   md: '728px',
-      //   lg: '984px',
-      //   xl: '1170px',
-      //   '2xl': '1410px',
-        
-      // },
+    
     },
     extend: {},
   },

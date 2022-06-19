@@ -15,7 +15,7 @@ function AboutSlider() {
   return (
     <div className='bg-[#111826] w-full h-full py-[100px]'>
         <div className='container'>
-            <div className='w-6/12 mx-auto'>
+            <div className='xl:w-6/12 lg:w-8/12 mx-auto'>
             <h2 className='text-[36px] text-white text-center mb-[70px] font-bold'>What people are saying <br></br> about us</h2>
             <div className='flex justify-center'>
             <img src={aboutImg} alt='' />

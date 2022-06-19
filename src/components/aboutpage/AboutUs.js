@@ -7,16 +7,16 @@ function AboutUs() {
     <div className='bg-[#111826] w-full h-full py-[100px]'>
         <div className='container'>
             <div className='grid grid-flow-row grid-cols-2'>
-                <div className='w-[570px] h-full bg-gradient-1 rounded-[30px]'>
-                    <img className="ml-[110px] w-[900px] mt-[50px]" src={about} alt='' />
+                <div className='xl:w-[570px] lg:w-[470px] h-full bg-gradient-1 rounded-[30px]'>
+                    <img className="xl:ml-[110px] lg:ml-0 w-[900px] mt-[50px]" src={about} alt='' />
                 </div>
                 <div>
-                    <img className='mt-[-50px]' src={linkimg} alt='' />
-                    <div className='ml-[200px]'>
+                    <img className='mt-[-50px] 2xl:ml-0 xl:ml-16 lg:block md:hidden' src={linkimg} alt='' />
+                    <div className='xl:ml-[200px] lg:ml-[120px] md:ml-10'>
                         <h2 className='text-[44px] text-white mb-5'>About us</h2>
-                        <p className='text-gray-500 leading-7 mb-10'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.elementum nulla turpis in nunc.</p>
+                        <p className='text-gray-500 leading-7 xl:mb-10 lg:mb-6'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.elementum nulla turpis in nunc.</p>
                         <p className='text-gray-500 leading-7'>Lacus consequat nibh euismod velit. Vitae cursus aliquam non vestibulum. Vel leo faucibus enim at nibh condimentum leo at blandit. Magnis duis non metus leo vitae commodo aliquam.Pulvinar nunc</p>
-                        <div className='mt-14 flex'>
+                        <div className='xl:mt-14 lg:mt-6 md:mt-4 flex'>
                             <div className='flex items-center pr-10 mr-10 border-r-slate-700 border-r'>
                                 <h4 className='text-white'>13k</h4>
                                 <span className='text-blue-500 ml-4'>creator</span>

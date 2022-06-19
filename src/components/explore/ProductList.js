@@ -89,19 +89,16 @@ function ProductList() {
 
   return (
 
-    
-
-
     <>
-        <div className='grid grid-flow-row grid-cols-4 gap-8'>
-          <div className="col-start-1 col-span-1 row-start-1 row-span-3">
-            <ul className="mt-10 w-fit">
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img1} alt='' />All</li>
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img2} alt='' />Games</li>
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img3} alt='' />Music</li>
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img4} alt='' />Art</li>
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img5} alt='' />Photograph</li>
-              <li className='flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white'><img className='mr-2 mt-[-6px] w-10' src={img6} alt='' />Domain</li>
+        <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 2xl:gap-8 md:gap-6'>
+          <div className="col-start-1 col-span-1 row-start-1 xl:row-span-3 lg:row-span-5 lg:col-span-1 md:col-span-2">
+            <ul className="lg:mt-10 lg:block md:mt-0 md:mb-10 w-fit md:grid md:grid-flow-row md:grid-cols-3">
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img1} alt='' />All</li>
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img2} alt='' />Games</li>
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img3} alt='' />Music</li>
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img4} alt='' />Art</li>
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img5} alt='' />Photograph</li>
+              <li className='explore-list'><img className='mr-2 mt-[-6px] w-10' src={img6} alt='' />Domain</li>
             </ul>
           </div>
 

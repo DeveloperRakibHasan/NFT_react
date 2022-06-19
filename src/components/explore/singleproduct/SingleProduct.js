@@ -38,7 +38,7 @@ function SingleProduct() {
     <div className='slider-dark-bg-grd py-[180px]'>
         <div className='container'>
             <h2 className='text-white mb-14'>Explore Product</h2>
-            <div className='grid grid-flow-row grid-cols-2 gap-[240px]'>
+            <div className='grid grid-flow-row lg:grid-cols-2 sm:grid-cols-1 md:mx-auto 2xl:gap-[240px] xl:gap-[100px] lg:gap-[60px] md:gap-[60px]'>
                 <div>
                     <SingleProductSlider />
                     <h4 className='text-white'>Description</h4>
@@ -46,15 +46,13 @@ function SingleProduct() {
                         Mattis scelerisque mi lorem eget. Fames .</p>
                 </div>
                 <div>
-
-                        <div>
-                            <h4 className='text-white font-bold text-[36px] font-redhet'>Qubic digital art</h4>
-                            <div className='mt-4 flex'>
-                                <p className='text-[#7D8694]'>Highest bid <span className='text-[#566FFE]'>0.234wETH</span></p>
-                                <p className='ml-6 text-white font-medium'>#27 portal</p>
-                            </div>
+                    <div>
+                        <h4 className='text-white font-bold text-[36px] font-redhet'>Qubic digital art</h4>
+                        <div className='mt-4 flex'>
+                            <p className='text-[#7D8694]'>Highest bid <span className='text-[#566FFE]'>0.234wETH</span></p>
+                            <p className='ml-6 text-white font-medium'>#27 portal</p>
                         </div>
-                         
+                    </div>   
                     <div className='mt-10'>
                         <div className='flex'>
                             <div>

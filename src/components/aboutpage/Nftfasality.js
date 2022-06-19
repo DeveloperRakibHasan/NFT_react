@@ -11,8 +11,8 @@ function Nftfasality() {
                 </div>
                 <div className='flex items-center'>
                     <div>
-                      <h4 className='text-white font-roboto font-semibold leading-[54px] text-[44px] mb-10'>Facilisis ullamcorper nisi turpis dui fames ut porttitor. </h4>
-                      <p className="text-[#7D8694] text-[18px] mb-14">Id massa id quis vitae ultrices ultrices ullamcorper condimentum. Ut at convallis pulvinar vulputate urna mauris pellentesque faucibus sed. Volutpat elit augue morbi aliquam volutpat. Sit arcu tincidunt amet, placerat. Scelerisque pellentesque vitae eros non aliquet sagittis sed. Interdum fermentum, laoreet odio posuere. </p>
+                      <h4 className='text-white font-roboto font-semibold lg:leading-[54px] md:leading-9 xl:text-[44px] lg:text-[34px] lg:mb-10 md:mb-6'>Facilisis ullamcorper nisi turpis dui fames ut porttitor. </h4>
+                      <p className="text-[#7D8694] xl:text-[18px] lg:text-[16px] mb-14">Id massa id quis vitae ultrices ultrices ullamcorper condimentum. Ut at convallis pulvinar vulputate urna mauris pellentesque faucibus sed. Volutpat elit augue morbi aliquam volutpat. Sit arcu tincidunt amet, placerat. Scelerisque pellentesque vitae eros non aliquet sagittis sed. Interdum fermentum, laoreet odio posuere. </p>
                       <button className='px-4 text-center py-3 rounded-xl button-bg font-medium text-white leading-7'>NFT Button</button>
                     </div>    
                  </div>

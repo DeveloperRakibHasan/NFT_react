@@ -21,7 +21,7 @@ function ProductCard(props) {
               <span className='text-[#7D8694]'>{props.dis}</span>
               <span className='text-[#7D8694] flex items-center'> <GiSelfLove className="mr-2" />214</span>
           </div>
-          <div className='flex justify-between px-5 mt-5 mb-6'>
+          <div className='flex justify-between items-center 2xl:px-8 xl:px-4 md:px-4 mt-5 mb-6'>
             <div className='flex'>
               <img src={user} alt="" />
               <img className='ml-[-10px]' src={user1} alt="" />

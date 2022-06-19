@@ -4,7 +4,7 @@ import Artiests from './Artiests';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import '../../css/bobble.css'
 
 
@@ -18,7 +18,7 @@ function Artiest() {
     </div>
 
     <div className='container'>
-        <div className='flex justify-between mt-[100px] mb-10'>
+        <div className='flex justify-between lg:mt-[100px] md:mt-10 mb-10'>
             <h4 className='text-[36px] text-white font-roboto'>Top Artist</h4>
             <button className='text-white flex items-center'>View All <BsArrowRightShort className='text-[22px]' /> </button>
         </div>
@@ -26,8 +26,13 @@ function Artiest() {
         <Swiper
         spaceBetween={20}
         slidesPerView={4}
+        autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                }}
+        modules={[Autoplay, Pagination]}
         pagination={true}
-        modules={[Pagination]}
+       
         >
       <SwiperSlide>
        <Artiests 

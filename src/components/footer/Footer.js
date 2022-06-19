@@ -7,7 +7,7 @@ function Footer() {
     <>
     <div className='bg-[#232738] pt-[100px] pb-[50px]'>
         <div className='container'>
-            <div className='grid grid-flow-row grid-cols-3 gap-6'>
+            <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 gap-6'>
                 <div>
                     <div className='w-[300px]'>
                         <h4 className='nav-text-grd text-[26px] font-bold mb-9'>Company.</h4>
@@ -21,7 +21,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className='lg:block md:hidden sm:hidden'>
                     <div className='grid grid-flow-row grid-cols-2'>
                     <ul>
                     <h6 className='text-white mb-10 '>Information</h6>

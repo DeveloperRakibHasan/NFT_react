@@ -43,7 +43,7 @@ function BidComponent() {
 
 
   return (
-    <div className='bg-[#232738] rounded-3xl py-5 px-8'>
+    <div className='bg-[#232738] rounded-3xl py-5 xl:px-8 lg:px-4 md:px-8'>
     <h4 className='text-center text-white'>Auction ending in</h4>
         <div className='flex justify-between items-center mt-4'>
            <div className='flex'>
@@ -61,29 +61,29 @@ function BidComponent() {
         </div>
         <div className='flex my-9'>
           <div className='flex items-center'>
-            <div className='bg-[#111826] p-3 rounded-xl w-20 text-center'>
-              <h4 className='text-white block'>{state.days || '0'}</h4>
+            <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 rounded-xl w-20 text-center'>
+              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.days || '0'}</h4>
               <span className='text-[#7D8694]'>Days</span>
             </div>
-            <b className='text-white ml-[30px]'>:</b>
+            <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4'>:</b>
           </div>
           <div className='flex items-center'>
-            <div className='bg-[#111826] p-3 rounded-xl ml-5 w-20 text-center'>
-              <h4 className='text-white block'>{state.hours || '00'}</h4>
+            <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 lg:ml-2 md:ml-4 rounded-xl 2xl:ml-6 xl:ml-5 w-20 text-center'>
+              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.hours || '00'}</h4>
               <span className='text-[#7D8694]'>Hours</span>
             </div>
-            <b className='text-white ml-[30px]'>:</b>
+            <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4'>:</b>
           </div>
           <div className='flex items-center'>
-            <div className='bg-[#111826] p-3 rounded-xl w-20 ml-5 text-center'>
-              <h4 className='text-white block'>{state.minutes || '00'}</h4>
+            <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 lg:ml-2 md:ml-4 rounded-xl w-20 2xl:ml-6 xl:ml-5 text-center'>
+              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.minutes || '00'}</h4>
               <span className='text-[#7D8694]'>Minutes</span>
             </div>
-            <b className='text-white ml-[30px]'>:</b>
+            <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4'>:</b>
           </div>
-          <div className='flex w-full justify-end items-center'>
-            <div className='bg-[#111826] p-3 rounded-xl w-20 text-center'>
-              <h4 className='text-white block'>{state.seconds || '00'}</h4>
+          <div className='flex w-full lg:justify-end md:justify-start items-center'>
+            <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 lg:ml-2 md:ml-4 rounded-xl w-20 text-center'>
+              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.seconds || '00'}</h4>
               <span className='text-[#7D8694]'>Seconds</span>
             </div>
           </div> 

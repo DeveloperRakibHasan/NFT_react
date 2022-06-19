@@ -11,12 +11,12 @@ import img9 from '../../../assets/img/4/9.png'
 
 function CollectionCard() {
   return (
-    <div className='grid grid-flow-row grid-cols-3 gap-7'>
+    <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7'>
         <div className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
-                <img src={img1} alt="" />
-                <img src={img2} alt="" />
-                <img className='col-span-2' src={img3} alt="" />
+                <img className='w-full' src={img1} alt="" />
+                <img className='w-full' src={img2} alt="" />
+                <img className='col-span-2 w-full' src={img3} alt="" />
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
                 <h6 className='text-white'>Qubic Art</h6>
@@ -25,9 +25,9 @@ function CollectionCard() {
         </div>
         <div className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
-                <img  className='col-span-2' src={img4} alt="" />
-                <img src={img5} alt="" />
-                <img src={img6} alt="" />
+                <img  className='col-span-2 w-full' src={img4} alt="" />
+                <img className='w-full' src={img5} alt="" />
+                <img className='w-full' src={img6} alt="" />
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
                 <h6 className='text-white'>Qubic Art</h6>
@@ -36,9 +36,9 @@ function CollectionCard() {
         </div>
         <div className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
-                <img src={img7} alt="" />
-                <img src={img8} alt="" />
-                <img className='col-span-2' src={img9} alt="" />
+                <img className='w-full' src={img7} alt="" />
+                <img className='w-full' src={img8} alt="" />
+                <img className='col-span-2 w-full' src={img9} alt="" />
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
                 <h6 className='text-white'>Qubic Art</h6>

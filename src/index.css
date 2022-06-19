@@ -142,10 +142,11 @@ position: absolute;
   @apply visible 2xl:w-[200px]
  xl:w-[180px]
  lg:w-[180px]
+ md:w-[180px]
  }
  .nth-position:nth-child(2),
  .nth-position:nth-child(4) {
-  margin-top: -90px;
+  @apply lg:mt-[-90px] md:mt-0
  }
  .bg-gradient-1{
   background: linear-gradient(180.19deg, rgba(255, 255, 255, 0.072) -7.47%, rgba(255, 255, 255, 0) 104.33%);
@@ -173,5 +174,18 @@ position: absolute;
   @apply bg-gradient-1 rounded-[30px] top-[50px] right-[60px] z-0 h-full absolute
  }
 
+ .product-menu{
+  @apply flex items-center py-3 cursor-pointer mb-1 text-[20px] rounded-xl px-8 hover:button-bg text-white
+ }
+
+.about-card-btn{
+@apply text-white hover:bg-white hover:text-black duration-300 rounded-xl border
+}
+.lg_btn{
+@apply lg:px-8 lg:py-4
+}
+.explore-list{
+@apply flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white
+}
 
 }

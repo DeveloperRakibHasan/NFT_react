@@ -5,7 +5,7 @@ function RecentView() {
   return (
     <div className='mt-[170px]'>
         <h4 className='text-white mb-10'>Recent View</h4>
-        <div className='grid grid-flow-row grid-cols-4 gap-7'>
+        <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-7'>
         <ProductCard
             title="Antique"
             rate="0.234wETH"

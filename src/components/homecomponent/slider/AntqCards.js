@@ -61,8 +61,8 @@ function AntqCards(props) {
 
   return (
     <>
-        <div className='xl:w-[270px] lg:w-full bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
-            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
+        <div className='xl:w-[270px] lg:w-full md:w-[260px] bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
+            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] md:h-[212px] sm:h-[186px] xm:h-[165px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
@@ -89,11 +89,11 @@ function AntqCards(props) {
                 </div>
               </div>
             </div>
-            <div className='flex justify-between items-center mt-4 px-5'>
-                <b className='text-white text-[18px]'>{props.title}</b>
+            <div className='flex justify-between items-center mt-4 sm:px-5 xm:px-3'>
+                <b className='text-white sm:text-[18px] xm:text-[16px]'>{props.title}</b>
                 <span className='text-[#566FFE]'>{props.rate}</span>
             </div>
-            <div className='flex justify-between mt-1 px-5 pb-2'>
+            <div className='flex justify-between mt-1 sm:px-5 xm:px-3 pb-2'>
                 <span className='text-[#7D8694]'>{props.dis}</span>
                 <span className='text-[#7D8694] flex items-center'> <GiSelfLove onClick={()=> setFill(!fill)} className={fill ? "mr-2 cursor-pointer text-red-600":"mr-2 cursor-pointer"} />{props.like}</span>
             </div>

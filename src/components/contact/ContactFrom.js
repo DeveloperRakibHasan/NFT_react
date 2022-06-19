@@ -8,8 +8,8 @@ function ContactFrom() {
     <div className='slider-dark-bg-grd py-[180px]'>
         <div className='container'>
         <h2 className='text-white text-center'>Contact Us</h2>
-        <div className='w-10/12 h-full mx-auto flex items-center mt-20'>
-            <form className='w-7/12 bg-[#232738] rounded-[30px] p-10'>
+        <div className='w-10/12 h-full mx-auto lg:flex items-center mt-20 md:grid md:place-items-center md:grid-flow-row md:grid-cols-1 md:gap-10'>
+            <form className='xl:w-7/12 lg:w-8/12 bg-[#232738] rounded-[30px] p-10'>
                 <h4 className='mb-6 text-white'>Send us message</h4>
                 <div className='grid grid-flow-row grid-cols-2 gap-5'>
                 <div className='mb-4'>
@@ -41,27 +41,27 @@ function ContactFrom() {
                     <button className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7'>Send Message</button>
                 </div>
             </form>
-            <div className='w-5/12'>
-            <div className='ml-[150px]'>
-                <div className='bg-[#232738] rounded-[30px] p-8 mb-[30px]'>
+            <div className='xl:w-5/12 lg:w-4/12 md:w-full'>
+            <div className='2xl:ml-[150px] xl:ml-[70px] lg:ml-0 lg:block md:grid md:grid-flow-row md:grid-cols-2 md:gap-4 md:col-span-2'>
+                <div className='bg-[#232738] md:w-full rounded-[30px] 2xl:p-8 md:p-4 lg:mb-[30px]'>
                     <div className='flex items-center mb-4'>
                         <img className='mr-5 font-bold' src={conicon} alt='' />
-                        <h4 className='text-white'>Address</h4>
+                        <h4 className='text-white xl:text-2xl lg:text-lg'>Address</h4>
                     </div>
                     <p className='text-gray-400'>Consectetur scelerisque pretium adipiscing montes dolor.</p>
                 </div>
-                <div className='bg-[#232738] rounded-[30px] p-8 mb-[30px]'>
+                <div className='bg-[#232738] md:w-full rounded-[30px] 2xl:p-8 md:p-4 lg:mb-[30px]'>
                     <div className='flex items-center mb-4'>
                         <img className='mr-5 font-bold' src={conicon2} alt='' />
-                        <h4 className='text-white'>Email</h4>
+                        <h4 className='text-white xl:text-2xl lg:text-lg'>Email</h4>
                     </div>
                     <li className='text-gray-400 list-none mb-2'>infoemail@mail.com</li>
                     <li className='text-gray-400  list-none'>infoemail@mail.com</li>
                 </div>
-                <div className='bg-[#232738] rounded-[30px] p-8'>
+                <div className='bg-[#232738] md:w-full rounded-[30px] 2xl:p-8 md:p-4'>
                     <div className='flex items-center mb-4'>
                         <img className='mr-5 font-bold' src={conicon3} alt='' />
-                        <h4 className='text-white'>Phone Number</h4>
+                        <h4 className='text-white xl:text-2xl lg:text-lg'>Phone Number</h4>
                     </div>
                     <li className='text-gray-400 list-none mb-2'>+015 0154 456874</li>
                     <li className='text-gray-400  list-none'>+015 0154 456874</li>
