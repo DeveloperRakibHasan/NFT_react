@@ -137,12 +137,16 @@ position: absolute;
    left:20px;
    width: 40px;
    visibility: hidden;
+   color:white;
+   text-transform: uppercase;
  }
  .search-active{
   @apply visible 2xl:w-[200px]
- xl:w-[180px]
+ xl:w-[150px]
  lg:w-[180px]
  md:w-[180px]
+ sm:w-[180px]
+ xm:w-[180px]
  }
  .nth-position:nth-child(2),
  .nth-position:nth-child(4) {
@@ -185,7 +189,9 @@ position: absolute;
 @apply lg:px-8 lg:py-4
 }
 .explore-list{
-@apply flex items-center py-4 mb-1 cursor-pointer text-[20px] rounded-xl px-8 hover:button-bg text-white
+@apply flex items-center md:py-4 sm:py-2 mb-1 cursor-pointer text-[20px] rounded-xl md:px-8 sm:px-4 hover:button-bg text-white
 }
+
+
 
 }

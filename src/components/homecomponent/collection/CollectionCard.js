@@ -20,7 +20,7 @@ function CollectionCard() {
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
                 <h6 className='text-white'>Qubic Art</h6>
-                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-gray-600'>56 Items</span>
+                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-[#7D8694]'>56 Items</span>
             </div>
         </div>
         <div className='bg-[#232738] rounded-[30px] p-3'>
@@ -30,8 +30,8 @@ function CollectionCard() {
                 <img className='w-full' src={img6} alt="" />
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
-                <h6 className='text-white'>Qubic Art</h6>
-                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-gray-600'>56 Items</span>
+                <h6 className='text-white'>Abstract art</h6>
+                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-[#7D8694]'>56 Items</span>
             </div>
         </div>
         <div className='bg-[#232738] rounded-[30px] p-3'>
@@ -41,8 +41,8 @@ function CollectionCard() {
                 <img className='col-span-2 w-full' src={img9} alt="" />
             </div>
             <div className='flex justify-between pt-7 pb-4 items-center px-3'>
-                <h6 className='text-white'>Qubic Art</h6>
-                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-gray-600'>56 Items</span>
+                <h6 className='text-white'>Editorial Art</h6>
+                <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-[#7D8694]'>56 Items</span>
             </div>
         </div>
     </div>

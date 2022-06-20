@@ -26,6 +26,16 @@ function Artiest() {
         <Swiper
         spaceBetween={20}
         slidesPerView={4}
+      //   breakpoints={{
+      //   576: {
+      //     width: 576,
+      //     slidesPerView: 2,
+      //   },
+      //   768: {
+      //     width: 768,
+      //     slidesPerView: 2,
+      //   },
+      // }}
         autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,

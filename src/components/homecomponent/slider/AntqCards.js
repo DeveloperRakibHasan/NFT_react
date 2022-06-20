@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { GiSelfLove } from "react-icons/gi";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
 function AntqCards(props) {
@@ -22,6 +22,8 @@ function AntqCards(props) {
   const [dotsActive, setDotsActive] = useState(false);
   const [fill, setFill]  = useState (false);
 
+  const [like, setLike] = useState(0)
+
   const [countdownDate] = useState(new Date('12/25/2022').getTime());
   const [state, setState] = useState ({
     days:0,
@@ -32,6 +34,14 @@ function AntqCards(props) {
   useEffect(() => {
     setInterval(() => setNewTime(), 1000);
   });
+
+  const likeBtn = () => {
+    if(!fill) {
+      setLike(like +1)
+    } else {
+      setLike(like -1)
+    }
+  }
 
   const setNewTime = () => {
     if(countdownDate) {
@@ -95,7 +105,7 @@ function AntqCards(props) {
             </div>
             <div className='flex justify-between mt-1 sm:px-5 xm:px-3 pb-2'>
                 <span className='text-[#7D8694]'>{props.dis}</span>
-                <span className='text-[#7D8694] flex items-center'> <GiSelfLove onClick={()=> setFill(!fill)} className={fill ? "mr-2 cursor-pointer text-red-600":"mr-2 cursor-pointer"} />{props.like}</span>
+                <span onClick={likeBtn} className='text-[#7D8694] flex items-center'> <GiSelfLove onClick={()=> setFill(!fill)} className={fill ? "mr-2 cursor-pointer text-red-600":"mr-2 cursor-pointer"} />{like}</span>
             </div>
         <ToastContainer />
 

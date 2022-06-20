@@ -46,14 +46,14 @@ function SingleProduct() {
                         Mattis scelerisque mi lorem eget. Fames .</p>
                 </div>
                 <div>
-                    <div>
+                    <div className='md:mt-0 xm:mt-6'>
                         <h4 className='text-white font-bold text-[36px] font-redhet'>Qubic digital art</h4>
-                        <div className='mt-4 flex'>
+                        <div className='md:mt-4 sm:mt-2 flex'>
                             <p className='text-[#7D8694]'>Highest bid <span className='text-[#566FFE]'>0.234wETH</span></p>
                             <p className='ml-6 text-white font-medium'>#27 portal</p>
                         </div>
                     </div>   
-                    <div className='mt-10'>
+                    <div className='md:mt-10 xm:mt-6'>
                         <div className='flex'>
                             <div>
                                 <b className='text-[#566FFE]'>Category 10% royalties</b>

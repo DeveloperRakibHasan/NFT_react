@@ -3,7 +3,7 @@ import ProductCard from '../../homecomponent/product/ProductCard'
 
 function RecentView() {
   return (
-    <div className='mt-[170px]'>
+    <div className='md:mt-[170px] xm:mt-[100px]'>
         <h4 className='text-white mb-10'>Recent View</h4>
         <div className='grid grid-flow-row xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-7'>
         <ProductCard

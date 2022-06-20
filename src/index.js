@@ -11,7 +11,7 @@ export const history = createBrowserHistory();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router history={history}>
-    <App />
+         <App />
   </Router>
 );
 
