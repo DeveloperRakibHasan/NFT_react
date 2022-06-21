@@ -8,12 +8,12 @@ function SellNftCard(props) {
   return (
     <>
         <div data-aos="fade-left"
-            data-aos-delay="300"
-           data-aos-duration="1500" 
+            data-aos-delay="100"
+           data-aos-duration="500" 
             className='2xl:p-8 xl:p-6 lg:p-8 md:p-6 sm:p-8 xm:p-8 bg-[#232738] rounded-2xl hover:bg-[#1F2332] duration-150'
             >
-            <div className='flex justify-between mb-10'>
-                <span><img className='2xl:w-full xl:w-[60px] md:w-[60px]' src={props.img} alt="" /></span>
+            <div className='flex justify-between sm:mb-10 xm:mb-4'>
+                <span><img className='2xl:w-full xl:w-[60px] md:w-[60px] xm:w-[60px]' src={props.img} alt="" /></span>
                 <p className='text-[#3F4456] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[40px]'>{props.stepnum}</span> </p>
             </div>
             <div>

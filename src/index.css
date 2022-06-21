@@ -4,6 +4,9 @@
 
 
 @layer components {
+html{
+  @apply scroll-smooth
+}
   h1 {
     font-size: 40px;
     font-family: 'Red Hat Display', sans-serif;
@@ -63,14 +66,14 @@ text-fill-color: transparent;
  color: #7566F6;
  }
  .nav-link ul {
-    color: #fff;
-    padding: 10px;
+    color: #000;
+    padding: 14px;
     position: absolute;
     top: 20px;
     left: 0;
     border-radius: 10px;
-    background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
-    width: 100px;
+    background: #fff;
+    width: 120px;
 }
  .active-dropdown {
   top: 50px!important;
@@ -146,7 +149,7 @@ position: absolute;
  lg:w-[180px]
  md:w-[180px]
  sm:w-[180px]
- xm:w-[180px]
+ xm:w-[160px]
  }
  .nth-position:nth-child(2),
  .nth-position:nth-child(4) {
@@ -171,7 +174,7 @@ position: absolute;
  @apply font-semibold leading-7 text-white flex items-center font-redhet
  }
  .slider-items{
- @apply flex items-center bg-[#232738] rounded-[30px] mb-14 p-3
+ @apply flex items-center bg-[#232738] rounded-[30px] mb-14 p-3 
  }
 
  .card-bg-gradient{
@@ -189,7 +192,10 @@ position: absolute;
 @apply lg:px-8 lg:py-4
 }
 .explore-list{
-@apply flex items-center md:py-4 sm:py-2 mb-1 cursor-pointer text-[20px] rounded-xl md:px-8 sm:px-4 hover:button-bg text-white
+@apply flex items-center md:py-4 sm:py-2 mb-1 cursor-pointer sm:text-[20px] xm:text-[16px] rounded-xl md:px-8 sm:px-4 xm:px-2 xm:py-1 hover:button-bg text-white
+}
+.footer-icon{
+  @apply mr-4 text-white text-[20px] cursor-pointer
 }
 
 

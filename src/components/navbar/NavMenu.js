@@ -7,8 +7,6 @@ function NavMenu() {
     const [showItem1, setShowItem1] = useState(false)
     const [showItem2, setShowItem2] = useState(false)
     const [showItem3, setShowItem3] = useState(false)
-    
-
 
   return (
     <>
@@ -34,9 +32,9 @@ function NavMenu() {
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
                     <ul className={showItem1 ?'active-dropdown duration-200':'d-none'}>
-                        <li className='my-1'><Link to='/explore'>Product</Link></li>
-                        <li className='my-1'><Link>Explore 2</Link></li>
-                        <li className='my-1'><Link>Explore 3</Link></li>
+                        <li className='my-2'><Link to='/explore'>Product</Link></li>
+                        <li className='my-2'><Link>Explore 2</Link></li>
+                        <li className='my-2'><Link>Explore 3</Link></li>
                     </ul>
                 </li>
                 <li className='nav-link' onClick={()=>setShowItem2(!showItem2)}>
@@ -45,9 +43,9 @@ function NavMenu() {
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
                     <ul className={showItem2 ?'active-dropdown duration-200':'d-none' }>
-                        <li className='my-1'><Link>Pages 1</Link></li>
-                        <li className='my-1'><Link>Pages 2</Link></li>
-                        <li className='my-1'><Link>Pages 3</Link></li>
+                        <li className='my-2'><Link>Pages 1</Link></li>
+                        <li className='my-2'><Link>Pages 2</Link></li>
+                        <li className='my-2'><Link>Pages 3</Link></li>
                     </ul>
                 </li>
                 <li className='nav-link' onClick={()=>setShowItem3(!showItem3)}>
@@ -56,9 +54,9 @@ function NavMenu() {
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
                     <ul className={showItem3 ?'active-dropdown duration-200':'d-none'}>
-                        <li className='my-1'><Link>Blog 1</Link></li>
-                        <li className='my-1'><Link>Blog 2</Link></li>
-                        <li className='my-1'><Link>Blog 3</Link></li>
+                        <li className='my-2'><Link>Blog 1</Link></li>
+                        <li className='my-2'><Link>Blog 2</Link></li>
+                        <li className='my-2'><Link>Blog 3</Link></li>
                     </ul>
                 </li>
                 <li className='nav-link mr-0'>

@@ -26,22 +26,37 @@ function Artiest() {
         <Swiper
         spaceBetween={20}
         slidesPerView={4}
-      //   breakpoints={{
-      //   576: {
-      //     width: 576,
-      //     slidesPerView: 2,
-      //   },
-      //   768: {
-      //     width: 768,
-      //     slidesPerView: 2,
-      //   },
-      // }}
+        breakpoints={{
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        }
+      }}
         autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
                 }}
         modules={[Autoplay, Pagination]}
-        pagination={true}
+        
+        pagination={{
+                clickable: true,
+                }}
        
         >
       <SwiperSlide>

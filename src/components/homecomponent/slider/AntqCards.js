@@ -4,7 +4,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
-function AntqCards(props) {
+function  AntqCards(props) {
 
   // const save = () => {
   //   toast.success("Saved Item.", {
@@ -72,7 +72,7 @@ function AntqCards(props) {
   return (
     <>
         <div className='xl:w-[270px] lg:w-full md:w-[260px] bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
-            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] md:h-[212px] sm:h-[186px] xm:h-[165px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
+            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] md:h-[212px] sm:h-[140px] xm:h-[144px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
@@ -99,12 +99,12 @@ function AntqCards(props) {
                 </div>
               </div>
             </div>
-            <div className='flex justify-between items-center mt-4 sm:px-5 xm:px-3'>
+            <div className='flex justify-between items-center mt-4 md:px-5 sm:px-1 xm:px-1'>
                 <b className='text-white sm:text-[18px] xm:text-[16px]'>{props.title}</b>
                 <span className='text-[#566FFE]'>{props.rate}</span>
             </div>
-            <div className='flex justify-between mt-1 sm:px-5 xm:px-3 pb-2'>
-                <span className='text-[#7D8694]'>{props.dis}</span>
+            <div className='flex justify-between mt-1 md:px-5 sm:px-1 xm:px-1 pb-2'>
+                <span className='text-[#7D8694] sm:text-[16px] xm:text-[14px]'>{props.dis}</span>
                 <span onClick={likeBtn} className='text-[#7D8694] flex items-center'> <GiSelfLove onClick={()=> setFill(!fill)} className={fill ? "mr-2 cursor-pointer text-red-600":"mr-2 cursor-pointer"} />{like}</span>
             </div>
         <ToastContainer />

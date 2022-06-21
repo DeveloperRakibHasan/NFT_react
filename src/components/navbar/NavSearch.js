@@ -24,7 +24,7 @@ function NavSearch() {
           <button onClick={()=> setActive(!active)} className=' absolute ml-[-10px] mt-[6px]'><FiSearch className={active?' font-semibold text-[20px] text-[#fff] duration-150 leading-7':' font-semibold text-[20px] text-[#566FFE] leading-7'} /></button>
         </div>
         <div className='2xl:mr-9 xl:mr-4 lg:mr-3'>
-            <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 xl:mr-0 md:mr-2 sm:mr-2 lg:mr-4 text-[20px]' /></span>
+            <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 xl:mr-0 md:mr-2 sm:mr-2 xm:mr-2 lg:mr-4 text-[20px]' /></span>
         </div>
         <div>
             <button onClick={()=> setLogin(!login)} className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</button>
@@ -33,8 +33,8 @@ function NavSearch() {
           <button onClick={() => setmobileBtnActive(!mobileBtnActive)}><HiOutlineMenuAlt3 className='text-white text-[22px]' /></button>
         </div>
     </div>
-    <div className={mobileBtnActive ? 'w-full h-full xm:block xl:hidden opacity-1 duration-300':'w-full ml-[100px] h-full xm:hidden xl:hidden opacity-0 duration-300'}>
-        <nav className='absolute w-full min-h-screen md:top-[71px] sm:top-[68px] py-10 z-[-1] bg-white'>
+    <div className={mobileBtnActive ? 'w-full h-full xm:block xl:hidden opacity-1 duration-300':'w-full ml-[100px] h-full xm:block invisible xl:hidden opacity-0 duration-300'}>
+        <nav className='absolute w-full min-h-screen overflow-scroll md:top-[71px] sm:top-[68px] xm:top-[68px] py-10 z-[-1] bg-white'>
             <ul className=' pt-[7px]'>
                 <li className='py-4 border-b'>
                     <NavLink exact to="/" className='ml-10 text-[18px]' activeClassName=' active-nav'>

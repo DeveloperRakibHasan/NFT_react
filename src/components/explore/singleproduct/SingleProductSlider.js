@@ -32,13 +32,13 @@ export default function SingleProductSlider() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg} alt='' />
+          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full xm:h-[300px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg1} alt='' />
+          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full xm:h-[300px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg1} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg2} alt='' />
+          <img className="w-[570px] 2xl:h-[500px] xl:h-[400px] lg:h-[400px] md:h-[500px] sm:h-[400px] md:w-full xm:h-[300px] border-[16px] border-[#3F454E] rounded-[36px]" src={sliderImg2} alt='' />
         </SwiperSlide>
         
       </Swiper>
@@ -52,15 +52,15 @@ export default function SingleProductSlider() {
         className="mySwiper mt-10 md:mb-[100px] xm:mb-16"
       >
         <SwiperSlide>
-          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] xl:h-[80px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] xl:h-[80px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg1} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg1} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] xl:h-[80px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg2} alt='' />
+          <img className="border-[12px] border-[#3F454E] w-[160px] 2xl:h-[120px] lg:h-[80px] md:h-[120px] sm:h-[80px] rounded-[20px]" src={sliderImg2} alt='' />
         </SwiperSlide>
         
       </Swiper>

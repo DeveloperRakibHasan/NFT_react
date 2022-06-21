@@ -5,7 +5,7 @@ import Copyright from './Copyright';
 function Footer() {
   return (
     <>
-    <div className='bg-[#232738] md:pt-[100px] sm:pt-[50px] pb-[50px]'>
+    <div className='bg-[#232738] md:pt-[100px] sm:pt-[50px] xm:pt-10 pb-[50px]'>
         <div className='container'>
             <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 gap-6'>
                 <div>
@@ -21,7 +21,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className='lg:block md:hidden sm:hidden'>
+                <div className='lg:block md:hidden sm:hidden xm:hidden'>
                     <div className='grid grid-flow-row grid-cols-2'>
                     <ul>
                     <h6 className='text-white mb-10 '>Information</h6>
@@ -44,15 +44,15 @@ function Footer() {
                         <p className='text-[#7D8694] mb-6'>Ac tristique sem nisi, at mauris. Sit sed porta eget tincidunt ut morbi erat nibh.</p>
                     </div>
                     <div className='flex items-center'>
-                        <input className=" lg:w-[200px] bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl focus:outline-none focus:placeholder:text-white" type="email" placeholder="Enter your Email" />
+                        <input className=" lg:w-[200px] sm:w-[180px] bg-gray-700 placeholder:text-gray-500 px-4 py-3 rounded-l-xl focus:outline-none focus:placeholder:text-white" type="email" placeholder="Enter your Email" />
                         <button className=' px-4 py-[10px] rounded-r-xl button-bg font-medium text-white leading-7'>Subscribe</button>
                     </div>
                     <div>
                         <ul className='flex mt-10'>
-                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-500'><FaFacebook/></li>
-                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-400'><FaTwitter /></li>
-                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-[#E80053]'><FaInstagram /></li>
-                            <li className='mr-4 text-white text-[20px] cursor-pointer hover:text-blue-900'><FaLinkedin /></li>
+                            <li className='footer-icon hover:text-blue-500'><FaFacebook/></li>
+                            <li className='footer-icon hover:text-blue-400'><FaTwitter /></li>
+                            <li className='footer-icon hover:text-[#E80053]'><FaInstagram /></li>
+                            <li className='footer-icon hover:text-blue-900'><FaLinkedin /></li>
                         </ul>
                     </div>
                 </div>
