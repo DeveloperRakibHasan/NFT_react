@@ -6,6 +6,7 @@ import Product from '../homecomponent/product/Product'
 import Collection from '../homecomponent/collection/Collection'
 import Footer from '../footer/Footer'
 
+
 function Home() {
   return (
     <>

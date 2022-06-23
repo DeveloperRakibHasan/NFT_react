@@ -8,11 +8,14 @@ import img6 from '../../../assets/img/4/6.png'
 import img7 from '../../../assets/img/4/7.png'
 import img8 from '../../../assets/img/4/8.png'
 import img9 from '../../../assets/img/4/9.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function CollectionCard() {
+    AOS.init();
   return (
     <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7'>
-        <div className='bg-[#232738] rounded-[30px] p-3'>
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
                 <img className='w-full' src={img1} alt="" />
                 <img className='w-full' src={img2} alt="" />
@@ -23,7 +26,7 @@ function CollectionCard() {
                 <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-[#7D8694]'>56 Items</span>
             </div>
         </div>
-        <div className='bg-[#232738] rounded-[30px] p-3'>
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
                 <img  className='col-span-2 w-full' src={img4} alt="" />
                 <img className='w-full' src={img5} alt="" />
@@ -34,7 +37,7 @@ function CollectionCard() {
                 <span className='px-4 py-2 rounded-[30px] bg-[#111826] text-[#7D8694]'>56 Items</span>
             </div>
         </div>
-        <div className='bg-[#232738] rounded-[30px] p-3'>
+        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='bg-[#232738] rounded-[30px] p-3'>
             <div className='grid grid-flow-row grid-cols-2 gap-2'>
                 <img className='w-full' src={img7} alt="" />
                 <img className='w-full' src={img8} alt="" />
