@@ -821,8 +821,8 @@ p{
   border-radius: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 20px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1177,6 +1177,10 @@ p{
 
 .mt-\[-180px\] {
   margin-top: -180px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .block {
@@ -1776,12 +1780,16 @@ p{
   transition-duration: 300ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
+.duration-75 {
+  transition-duration: 75ms;
 }
 
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .placeholder\:text-gray-500::-webkit-input-placeholder {
@@ -3503,6 +3511,10 @@ p{
     margin-bottom: 1.5rem;
   }
 
+  .\32xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .\32xl\:h-\[500px\] {
     height: 500px;
   }
@@ -3563,6 +3575,11 @@ p{
   .\32xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .\32xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .\32xl\:pt-\[158px\] {

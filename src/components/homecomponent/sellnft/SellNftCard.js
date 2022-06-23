@@ -17,8 +17,8 @@ function SellNftCard(props) {
                 <p className='text-[#717585] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[#4A4D5B] text-[40px]'>{props.stepnum}</span> </p>
             </div>
             <div>
-                <h4 className='text-white 2xl:text-[24px] xl:text-[20px] font-roboto mb-5'>{props.title}</h4>
-                <p className='text-[#7D8694] 2xl:mb-6 xl:mb-6 leading-7'>{props.pragraph}</p>
+                <h4 className='text-white 2xl:text-[24px] xl:text-[20px] font-roboto mb-4'>{props.title}</h4>
+                <p className='text-[#7D8694] 2xl:mb-0 xl:mb-0 leading-7'>{props.pragraph}</p>
                 <button className='text-white md:mt-0 sm:mt-2 text-[22px]'><img src={arrow} alt='' /></button>
             </div>
         </div>

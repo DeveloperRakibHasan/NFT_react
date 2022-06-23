@@ -28,7 +28,7 @@ function NavMenu() {
                         Explore
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200'>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/explore'>Product</Link></li>
                         <li className='my-2'><Link>Explore 2</Link></li>
                         <li className='my-2'><Link>Explore 3</Link></li>
@@ -39,7 +39,7 @@ function NavMenu() {
                         Pages
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200'>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link>Pages 1</Link></li>
                         <li className='my-2'><Link>Pages 2</Link></li>
                         <li className='my-2'><Link>Pages 3</Link></li>
@@ -50,7 +50,7 @@ function NavMenu() {
                         Blog
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200'>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link>Blog 1</Link></li>
                         <li className='my-2'><Link>Blog 2</Link></li>
                         <li className='my-2'><Link>Blog 3</Link></li>
