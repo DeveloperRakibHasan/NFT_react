@@ -74,9 +74,10 @@ text-fill-color: transparent;
     border-radius: 10px;
     background: #fff;
     width: 120px;
+    @apply duration-300
 }
  .active-dropdown {
-  top: 50px!important;
+  top: 40px!important;
   opacity: 1!important;
   visibility: visible!important;
 }

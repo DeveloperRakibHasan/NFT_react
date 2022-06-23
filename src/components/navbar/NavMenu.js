@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import NavSearch from './NavSearch';
 
 function NavMenu() {
-    const [showItem1, setShowItem1] = useState(false)
+    // const [showItem1, setShowItem1] = useState(false)
     const [showItem2, setShowItem2] = useState(false)
     const [showItem3, setShowItem3] = useState(false)
 
@@ -26,34 +26,34 @@ function NavMenu() {
                         About Us
                     </NavLink>
                 </li>
-                <li className='nav-link' onClick={()=>setShowItem1(!showItem1)}>
+                <li className='nav-link group'>
                     <Link className='items-center flex'>
                         Explore
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className={showItem1 ?'active-dropdown duration-200':'d-none'}>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible duration-200'>
                         <li className='my-2'><Link to='/explore'>Product</Link></li>
                         <li className='my-2'><Link>Explore 2</Link></li>
                         <li className='my-2'><Link>Explore 3</Link></li>
                     </ul>
                 </li>
-                <li className='nav-link' onClick={()=>setShowItem2(!showItem2)}>
+                <li className='nav-link group'>
                     <Link className='flex items-center'>
                         Pages
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className={showItem2 ?'active-dropdown duration-200':'d-none' }>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible duration-200'>
                         <li className='my-2'><Link>Pages 1</Link></li>
                         <li className='my-2'><Link>Pages 2</Link></li>
                         <li className='my-2'><Link>Pages 3</Link></li>
                     </ul>
                 </li>
-                <li className='nav-link' onClick={()=>setShowItem3(!showItem3)}>
+                <li className='nav-link group'>
                     <Link className='flex items-center'>
                         Blog
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
-                    <ul className={showItem3 ?'active-dropdown duration-200':'d-none'}>
+                    <ul className='group-hover:active-dropdown invisible group-hover:visible duration-200'>
                         <li className='my-2'><Link>Blog 1</Link></li>
                         <li className='my-2'><Link>Blog 2</Link></li>
                         <li className='my-2'><Link>Blog 3</Link></li>

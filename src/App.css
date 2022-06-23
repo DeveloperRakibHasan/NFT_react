@@ -633,10 +633,11 @@ p{
   border-radius: 10px;
   background: #fff;
   width: 120px;
+  transition-duration: 300ms
 }
 
 .active-dropdown {
-  top: 50px!important;
+  top: 40px!important;
   opacity: 1!important;
   visibility: visible!important;
 }
@@ -1968,6 +1969,16 @@ p{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:active-dropdown {
+  top: 40px!important;
+  opacity: 1!important;
+  visibility: visible!important;
+}
+
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
 @media (min-width: 480px) {
   .xm\:top-\[68px\] {
     top: 68px;
@@ -3265,14 +3276,6 @@ p{
     margin-bottom: 1.5rem;
   }
 
-  .xl\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
-  .xl\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .xl\:mt-20 {
     margin-top: 5rem;
   }
@@ -3483,10 +3486,6 @@ p{
 
   .\32xl\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .\32xl\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .\32xl\:h-\[500px\] {
