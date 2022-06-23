@@ -633,7 +633,6 @@ p{
   border-radius: 10px;
   background: #fff;
   width: 120px;
-  transition-duration: 300ms
 }
 
 .active-dropdown {
@@ -1264,10 +1263,6 @@ p{
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .cursor-pointer {
@@ -1985,6 +1980,10 @@ p{
 
 .group:hover .group-hover\:invisible {
   visibility: hidden;
+}
+
+.group:hover .group-hover\:duration-200 {
+  transition-duration: 200ms;
 }
 
 @media (min-width: 480px) {
@@ -3050,16 +3049,16 @@ p{
     width: 200px;
   }
 
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
 
   .lg\:w-11\/12 {
     width: 91.666667%;
-  }
-
-  .lg\:w-10 {
-    width: 2.5rem;
   }
 
   .lg\:grid-cols-2 {
@@ -3332,6 +3331,10 @@ p{
     width: 41.666667%;
   }
 
+  .xl\:w-14 {
+    width: 3.5rem;
+  }
+
   .xl\:w-\[60px\] {
     width: 60px;
   }
@@ -3346,10 +3349,6 @@ p{
 
   .xl\:w-\[540px\] {
     width: 540px;
-  }
-
-  .xl\:w-14 {
-    width: 3.5rem;
   }
 
   .xl\:grid-cols-4 {
