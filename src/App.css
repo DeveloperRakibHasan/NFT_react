@@ -1266,6 +1266,10 @@ p{
   width: 1.5rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1977,6 +1981,10 @@ p{
 
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+
+.group:hover .group-hover\:invisible {
+  visibility: hidden;
 }
 
 @media (min-width: 480px) {
@@ -3050,6 +3058,10 @@ p{
     width: 91.666667%;
   }
 
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3334,6 +3346,10 @@ p{
 
   .xl\:w-\[540px\] {
     width: 540px;
+  }
+
+  .xl\:w-14 {
+    width: 3.5rem;
   }
 
   .xl\:grid-cols-4 {

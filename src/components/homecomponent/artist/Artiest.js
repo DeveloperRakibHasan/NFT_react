@@ -49,7 +49,7 @@ function Artiest() {
         }
       }}
         autoplay={{
-                delay: 3000,
+                delay: 1500,
                 disableOnInteraction: false,
                 }}
         modules={[Autoplay, Pagination]}

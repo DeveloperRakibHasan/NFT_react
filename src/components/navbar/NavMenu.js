@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { FaAngleDown } from "react-icons/fa";
 import NavSearch from './NavSearch';
 
 function NavMenu() {
-    // const [showItem1, setShowItem1] = useState(false)
-    const [showItem2, setShowItem2] = useState(false)
-    const [showItem3, setShowItem3] = useState(false)
 
   return (
     <>
