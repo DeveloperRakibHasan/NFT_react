@@ -27,7 +27,7 @@ function NavSearch() {
             <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 xl:mr-0 md:mr-2 sm:mr-2 xm:mr-2 lg:mr-4 text-[20px]' /></span>
         </div>
         <div>
-            <button onClick={()=> setLogin(!login)} className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</button>
+            <button onClick={()=> setLogin(!login)} className='px-4 py-[10px] rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</button>
         </div>
         <div className='mobilemenu-bar xl:hidden lg:block cursor-pointer'>
           <button onClick={() => setmobileBtnActive(!mobileBtnActive)}><HiOutlineMenuAlt3 className='text-white text-[22px]' /></button>
