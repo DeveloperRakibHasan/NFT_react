@@ -1,7 +1,7 @@
 import React from 'react'
-import { BsArrowRightShort } from "react-icons/bs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import arrow from '../../../assets/img/icon/arrow.svg'
 
 function SellNftCard(props) {
   AOS.init();
@@ -14,12 +14,12 @@ function SellNftCard(props) {
             >
             <div className='flex justify-between sm:mb-10 xm:mb-4'>
                 <span><img className='2xl:w-full xl:w-[60px] md:w-[60px] xm:w-[60px]' src={props.img} alt="" /></span>
-                <p className='text-[#3F4456] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[40px]'>{props.stepnum}</span> </p>
+                <p className='text-[#717585] text-[14px] font-redhet font-bold flex items-center '>Step <span className='ml-2 text-[#4A4D5B] text-[40px]'>{props.stepnum}</span> </p>
             </div>
             <div>
                 <h4 className='text-white 2xl:text-[24px] xl:text-[20px] font-roboto mb-5'>{props.title}</h4>
                 <p className='text-[#7D8694] 2xl:mb-6 xl:mb-6 leading-7'>{props.pragraph}</p>
-                <button className='text-white md:mt-0 sm:mt-2 text-[22px]'><BsArrowRightShort/></button>
+                <button className='text-white md:mt-0 sm:mt-2 text-[22px]'><img src={arrow} alt='' /></button>
             </div>
         </div>
     </>

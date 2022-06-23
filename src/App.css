@@ -695,7 +695,7 @@ p{
 .search_input{
   padding-left:10px;
   padding-right:10px;
-  background: #171721;
+  background: #26262F;
   padding-top:4px;
   padding-bottom:4px;
   outline:none;
@@ -1733,9 +1733,14 @@ p{
   color: rgb(101 105 107 / var(--tw-text-opacity));
 }
 
-.text-\[\#3F4456\] {
+.text-\[\#717585\] {
   --tw-text-opacity: 1;
-  color: rgb(63 68 86 / var(--tw-text-opacity));
+  color: rgb(113 117 133 / var(--tw-text-opacity));
+}
+
+.text-\[\#4A4D5B\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 77 91 / var(--tw-text-opacity));
 }
 
 .text-red-600 {
@@ -2676,10 +2681,6 @@ p{
     margin-left: -120px;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -3264,8 +3265,16 @@ p{
     margin-bottom: 1.5rem;
   }
 
-  .xl\:mt-3 {
-    margin-top: 0.75rem;
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .xl\:block {
@@ -3476,8 +3485,8 @@ p{
     margin-bottom: 1.5rem;
   }
 
-  .\32xl\:mt-3 {
-    margin-top: 0.75rem;
+  .\32xl\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .\32xl\:h-\[500px\] {
@@ -3527,19 +3536,9 @@ p{
     padding-right: 1.5rem;
   }
 
-  .\32xl\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .\32xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .\32xl\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .\32xl\:py-5 {
@@ -3547,16 +3546,17 @@ p{
     padding-bottom: 1.25rem;
   }
 
-  .\32xl\:pt-\[180px\] {
-    padding-top: 180px;
-  }
-
-  .\32xl\:pr-8 {
+  .\32xl\:px-8 {
+    padding-left: 2rem;
     padding-right: 2rem;
   }
 
   .\32xl\:pt-\[158px\] {
     padding-top: 158px;
+  }
+
+  .\32xl\:pr-8 {
+    padding-right: 2rem;
   }
 
   .\32xl\:text-\[24px\] {
