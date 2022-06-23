@@ -1186,6 +1186,14 @@ p{
   margin-top: -180px;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[17px\] {
+  margin-bottom: 17px;
+}
+
 .block {
   display: block;
 }
@@ -1690,6 +1698,10 @@ p{
   line-height: 1.75rem;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2132,16 +2144,12 @@ p{
     width: 25px;
   }
 
-  .xm\:w-\[60px\] {
-    width: 60px;
-  }
-
   .xm\:w-10 {
     width: 2.5rem;
   }
 
-  .xm\:w-14 {
-    width: 3.5rem;
+  .xm\:w-\[60px\] {
+    width: 60px;
   }
 
   .xm\:grid-flow-row {
@@ -2461,10 +2469,6 @@ p{
 
   .sm\:h-\[80px\] {
     height: 80px;
-  }
-
-  .sm\:h-\[140px\] {
-    height: 140px;
   }
 
   .sm\:h-\[188px\] {
@@ -3085,10 +3089,6 @@ p{
     width: 200px;
   }
 
-  .lg\:w-10 {
-    width: 2.5rem;
-  }
-
   .lg\:w-full {
     width: 100%;
   }
@@ -3399,10 +3399,6 @@ p{
     gap: 2rem;
   }
 
-  .xl\:gap-4 {
-    gap: 1rem;
-  }
-
   .xl\:border-r {
     border-right-width: 1px;
   }
@@ -3547,6 +3543,14 @@ p{
     margin-bottom: 1rem;
   }
 
+  .\32xl\:mb-\[42px\] {
+    margin-bottom: 42px;
+  }
+
+  .\32xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .\32xl\:h-\[500px\] {
     height: 500px;
   }
@@ -3607,6 +3611,16 @@ p{
   .\32xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .\32xl\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .\32xl\:py-\[34px\] {
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   .\32xl\:pt-\[130px\] {
