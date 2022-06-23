@@ -187,7 +187,7 @@ position: absolute;
  }
 
 .about-card-btn{
-@apply text-white hover:bg-white hover:text-black duration-300 rounded-xl border
+@apply text-white hover:bg-white hover:text-black duration-300 rounded-xl border font-semibold
 }
 .lg_btn{
 @apply lg:px-8 lg:py-4

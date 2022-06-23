@@ -72,7 +72,7 @@ function  AntqCards(props) {
   return (
     <>
         <div className='xl:w-[270px] lg:w-full md:w-[260px] bg-[#2A2E3F] rounded-[30px] h-full p-3 nth-position'>
-            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] md:h-[212px] sm:h-[140px] xm:h-[144px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
+            <div className=' bg-no-repeat bg-contain bg-center w-full xl:h-[220px] lg:h-[172px] md:h-[212px] sm:h-[188px] xm:h-[144px] relative' style={{ backgroundImage: `url(${props.bgImage})` }}>
             <div className='absolute right-2 top-4 text-white z-20'>
             <button onClick={()=> setDotsActive(!dotsActive)} className='font-bold cursor-pointer text-[24px]'><BsThreeDotsVertical /></button>
             <ul className={dotsActive?'dots active-dots duration-200': 'dots'}>
