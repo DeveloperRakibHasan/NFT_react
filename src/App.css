@@ -595,7 +595,7 @@ p{
 }
 
 .nft-card-bg{
-  background: linear-gradient(183.54deg, rgba(207, 116, 255, 0.7) -74.74%, rgba(27, 89, 237, 0.7) 236.1%);
+  background: linear-gradient(184.66deg, #CF74FF -59.72%, #1B59ED 212.35%);
 }
 
 .nav-link{
@@ -1174,6 +1174,10 @@ p{
   margin-top: 100px;
 }
 
+.mb-\[17px\] {
+  margin-bottom: 17px;
+}
+
 .mt-\[-20px\] {
   margin-top: -20px;
 }
@@ -1184,14 +1188,6 @@ p{
 
 .mt-\[-180px\] {
   margin-top: -180px;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[17px\] {
-  margin-bottom: 17px;
 }
 
 .block {
@@ -3539,16 +3535,8 @@ p{
     margin-bottom: 1.5rem;
   }
 
-  .\32xl\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .\32xl\:mb-\[42px\] {
     margin-bottom: 42px;
-  }
-
-  .\32xl\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .\32xl\:h-\[500px\] {
@@ -3598,6 +3586,16 @@ p{
     padding-right: 1.5rem;
   }
 
+  .\32xl\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .\32xl\:py-\[34px\] {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
   .\32xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3611,16 +3609,6 @@ p{
   .\32xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .\32xl\:px-\[30px\] {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .\32xl\:py-\[34px\] {
-    padding-top: 34px;
-    padding-bottom: 34px;
   }
 
   .\32xl\:pt-\[130px\] {

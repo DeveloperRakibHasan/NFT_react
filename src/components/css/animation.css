@@ -1,0 +1,17 @@
+.anime{
+    animation: anime 10s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(30px) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1);
+    }
+    100% {
+        transform: translateY(30px) scale(1);
+    }
+ 
+    
+}
