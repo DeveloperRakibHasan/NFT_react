@@ -1,6 +1,11 @@
 import React from 'react'
-import { FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Copyright from './Copyright';
+import phoneicon from '../../assets/img/footer-icon/1.png'
+import facebook from '../../assets/img/footer-icon/facebook.png'
+import tw from '../../assets/img/footer-icon/tw.png'
+import instagram from '../../assets/img/footer-icon/in.png'
+import li from '../../assets/img/footer-icon/li.png'
 
 function Footer() {
   return (
@@ -16,8 +21,8 @@ function Footer() {
                     <div>
                         <h6 className=' font-semibold md:mb-4 sm:mb-2 text-white'>Contact Us</h6>
                         <ul>
-                            <li className='text-[#7D8694] flex items-center mb-2'><FaPhoneAlt className='mr-2' /> +12 3456 7890</li>
-                            <li className='text-[#7D8694] flex items-center'><FaPhoneAlt className='mr-2 ' /> +12 3456 7890</li>
+                            <li className='text-[#7D8694] flex items-center mb-2'><img src={phoneicon} alt='' className='mr-2' /> +12 3456 7890</li>
+                            <li className='text-[#7D8694] flex items-center'><img src={phoneicon} alt='' className='mr-2 ' /> +12 3456 7890</li>
                         </ul>
                     </div>
                 </div>
@@ -49,10 +54,10 @@ function Footer() {
                     </div>
                     <div>
                         <ul className='flex mt-10'>
-                            <li className='footer-icon hover:text-blue-500'><FaFacebook/></li>
-                            <li className='footer-icon hover:text-blue-400'><FaTwitter /></li>
-                            <li className='footer-icon hover:text-[#E80053]'><FaInstagram /></li>
-                            <li className='footer-icon hover:text-blue-900'><FaLinkedin /></li>
+                            <li className='footer-icon'><img src={facebook} alt='' /></li>
+                            <li className='footer-icon'><img src={tw} alt='' /></li>
+                            <li className='footer-icon'><img src={instagram} alt='' /></li>
+                            <li className='footer-icon'><img src={li} alt='' /></li>
                         </ul>
                     </div>
                 </div>

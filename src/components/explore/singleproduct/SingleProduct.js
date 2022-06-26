@@ -6,6 +6,7 @@ import BidHistory from './BidHistory'
 import Footer from '../../footer/Footer'
 import abc from '../../../assets/img/2/1.png'
 import abc2 from '../../../assets/img/2/2.png'
+import { BsThreeDots } from "react-icons/bs";
 // import { useParams } from 'react-router-dom'
 
 function SingleProduct() {
@@ -47,7 +48,10 @@ function SingleProduct() {
                 </div>
                 <div>
                     <div className='md:mt-0 xm:mt-6'>
+                        <div className='flex justify-between items-center'>
                         <h4 className='text-white font-bold sm:text-[36px] xm:text-[28px] font-redhet'>Qubic digital art</h4>
+                        <BsThreeDots className='text-white text-[22px]' />
+                        </div>
                         <div className='md:mt-4 sm:mt-2 xm:mt-2 flex'>
                             <p className='text-[#7D8694] sm:text-[18px] xm:text-[14px]'>Highest bid <span className='text-[#566FFE]'>0.234wETH</span></p>
                             <p className='ml-6 text-white font-medium sm:text-[18px] xm:text-[12px]'>#27 portal</p>
