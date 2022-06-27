@@ -1470,6 +1470,21 @@ p{
   background-color: rgb(42 46 63 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#E9FCFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 252 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF735C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 115 92 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFFFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -3333,6 +3348,10 @@ p{
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:gap-\[100px\] {
