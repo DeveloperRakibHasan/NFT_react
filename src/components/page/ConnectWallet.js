@@ -12,8 +12,8 @@ function ConnectWallet() {
             <div>
                 <h2 className='mt-12 text-center text-[36px] text-white font-bold'>Connect your Wallet</h2>
                <div className='w-10/12 mx-auto mt-11 pb-[140px]'>
-                <div className='bg-gradient-1 p-8 rounded-[30px]'>
-                        <div className='grid grid-flow-row grid-cols-3 gap-8 justify-center justify-items-center'>
+                    <div className='bg-gradient-1 p-8 rounded-[30px]'>
+                        <div className='grid grid-flow-row grid-cols-3 gap-8'>
                             <div className='bg-[#2A2E3F] w-full text-center mx-auto rounded-3xl py-10 px-12'>
                                 <img className='mx-auto' src={walletimg} alt='' />
                                 <p className='font-bold text-white mt-6 text-[20px]'>Create Single</p>
