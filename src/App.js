@@ -6,6 +6,7 @@ import About from './components/page/About'
 import Explore from './components/page/Explore';
 import Contact from './components/page/Contact';
 import SingleProduct from './components/explore/singleproduct/SingleProduct';
+import ConnectWallet from './components/page/ConnectWallet';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/explore/:id" component={SingleProduct} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/wallet" component={ConnectWallet} />
       </Switch>
     </>
   );

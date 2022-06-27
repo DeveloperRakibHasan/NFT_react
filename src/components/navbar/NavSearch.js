@@ -8,7 +8,6 @@ import { IoMdAddCircle } from "react-icons/io";
 
 function NavSearch() {
   const [active, setActive] = useState(false);
-  const [login, setLogin] = useState(false);
 
   const [showItem1, setShowItem1] = useState(false)
   const [showItem2, setShowItem2] = useState(false)
@@ -27,7 +26,7 @@ function NavSearch() {
             <span className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <input id="upload-photo" type="file" /> <HiOutlineUpload className='ml-2 xl:mr-0 md:mr-2 sm:mr-2 xm:mr-2 lg:mr-4 text-[20px]' /></span>
         </div>
         <div>
-            <button onClick={()=> setLogin(!login)} className='px-4 py-[10px] rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</button>
+            <NavLink exact to="/wallet"  className='px-4 py-[10px] rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</NavLink>
         </div>
         <div className='mobilemenu-bar xl:hidden lg:block cursor-pointer'>
           <button onClick={() => setmobileBtnActive(!mobileBtnActive)}><HiOutlineMenuAlt3 className='text-white text-[22px]' /></button>
@@ -86,22 +85,10 @@ function NavSearch() {
                 </li>
             </ul>
             <div className='mt-6'>
-            <button className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7 mx-10 xl:block'>Connect Wallet</button>
+            <NavLink exact to="/wallet" className='px-4 py-3 rounded-xl button-bg font-medium text-white leading-7 mx-10 xl:block'>Connect Wallet</NavLink>
         </div>
         </nav>
         </div>
-    
-      <div className={login ? ' absolute shadow-xl p-10 bg-white w-[500px] h-[500px] z-50 rounded-[30px] mt-10 duration-200 opacity-[1] visible':'absolute p-10 bg-white w-[500px] h-[500px] z-50 rounded-[30px] opacity-0 invisible'}>
-        <div className='w-full flex justify-center'>
-        <div className='mt-10'>
-        <h4 className='font-redhet mb-10 font-semibold'>Login your Account</h4>
-          <input required className='w-full focus:outline-none focus:placeholder:text-black mb-5 bg-gray-100 px-10 py-4 rounded-md ' type="email" name="email" placeholder="Enter your Email" />
-          <input required className='w-full mb-5 focus:outline-none focus:placeholder:text-black bg-gray-100 px-10 py-4 rounded-md '  type="password" name="email" placeholder="Enter your password" />
-          <button type="submit" className='px-4 w-full text-center py-3 rounded-xl button-bg font-medium text-white leading-7'>LogIN</button>
-        <p className='mt-8'>You don't have any account? <Link className="ml-2 text-blue-400">Sign Up</Link> </p>
-        </div>
-        </div>
-      </div>
     </>
   )
 }

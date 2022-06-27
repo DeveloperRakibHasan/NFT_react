@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Copyright from './Copyright';
 import phoneicon from '../../assets/img/footer-icon/1.png'
 import facebook from '../../assets/img/footer-icon/facebook.png'
