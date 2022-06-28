@@ -943,10 +943,6 @@ p{
   grid-column: span 1 / span 1;
 }
 
-.col-span-full {
-  grid-column: 1 / -1;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -1171,10 +1167,6 @@ p{
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .table-cell {
   display: table-cell;
 }
@@ -1257,15 +1249,6 @@ p{
   grid-auto-flow: row;
 }
 
-.grid-flow-row-dense {
-  grid-auto-flow: row dense;
-}
-
-.auto-rows-max {
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1292,10 +1275,6 @@ p{
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .gap-10 {
@@ -1475,16 +1454,6 @@ p{
   background-color: rgb(233 252 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FF735C\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 115 92 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFFFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-contain {
   background-size: contain;
 }
@@ -1572,6 +1541,11 @@ p{
 .px-11 {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-5 {
@@ -2444,6 +2418,10 @@ p{
 
   .sm\:w-\[180px\] {
     width: 180px;
+  }
+
+  .sm\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .sm\:grid-cols-1 {
@@ -3328,6 +3306,10 @@ p{
 
   .xl\:w-14 {
     width: 3.5rem;
+  }
+
+  .xl\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .xl\:w-\[60px\] {

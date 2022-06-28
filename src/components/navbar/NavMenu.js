@@ -51,7 +51,7 @@ function NavMenu() {
                         <FaAngleDown className='ml-1 font-extralight' />
                     </Link>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
-                        <li className='my-2'><Link>Blog 1</Link></li>
+                        <li className='my-2'><Link to='/blog'>All Blog</Link></li>
                         <li className='my-2'><Link>Blog 2</Link></li>
                         <li className='my-2'><Link>Blog 3</Link></li>
                     </ul>

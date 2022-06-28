@@ -8,6 +8,8 @@ import Contact from './components/page/Contact';
 import SingleProduct from './components/explore/singleproduct/SingleProduct';
 import ConnectWallet from './components/page/ConnectWallet';
 import Pagenotfound from './components/page/Pagenotfound';
+import Upload from './components/page/Upload'
+import Blog from './components/page/Blog';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/explore/:id" component={SingleProduct} />
+        <Route exact path="/blog" component={Blog} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/upload" component={Upload} />
         <Route exact path="/wallet" component={ConnectWallet} />
         <Route exact component={Pagenotfound} />
       </Switch>
