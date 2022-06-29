@@ -73,7 +73,7 @@ function NavSearch() {
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </Link>
                     <ul className={showItem3 ?'active-dropdown duration-200 ml-14':'d-none'}>
-                        <li className='py-2 border-b'><Link>Blog 1</Link></li>
+                        <li className='py-2 border-b'><Link to='/blog'>All Blog</Link></li>
                         <li className='py-2 border-b'><Link>Blog 2</Link></li>
                         <li className='py-2'><Link>Blog 3</Link></li>
                     </ul>
