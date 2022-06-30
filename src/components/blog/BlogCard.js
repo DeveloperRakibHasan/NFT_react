@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import LinesEllipsis from 'react-lines-ellipsis'
-import bgImage from '../../assets/img/3/1.png'
 import user from '../../assets/img/2/1.png'
 
-function BlogCard({dis, title}) {
+function BlogCard({dis, title, img}) {
   return (
+    <Link to='/singlenews'>
     <div className='bg-[#232738] p-3 rounded-[30px]'>
         <div className=' relative text-white'>
-        <img className=' w-full lg:max-h-[300px] md:max-h-[200px] sm:max-h-[300px]' src={bgImage} alt="" />
+        <img className=' w-full lg:max-h-[300px] md:max-h-[200px] sm:max-h-[300px]' src={img} alt="" />
         <span className='px-4 py-2 rounded-3xl bg-[#232738] absolute top-5 left-4'>Design</span>
         </div>
         <div>
@@ -43,6 +44,7 @@ function BlogCard({dis, title}) {
           </div>
         </div>
     </div>
+    </Link>
   )
 }
 

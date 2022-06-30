@@ -1,16 +1,16 @@
 import React from 'react'
-import BlogsItem from '../blog/BlogsItem'
+import BlogNewsItem from './BlogNewsItem'
 import Footer from '../footer/Footer'
-import Abc from '../pagination/Abc'
 
-function Blog() {
+function SingleBlogNews() {
   return (
+    <>
     <div className='slider-dark-bg-grd h-full pt-20'>
-        <BlogsItem/>
-        <Abc/>
+        <BlogNewsItem />
         <Footer />
     </div>
+    </>
   )
 }
 
-export default Blog
+export default SingleBlogNews

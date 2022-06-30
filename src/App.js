@@ -10,6 +10,7 @@ import ConnectWallet from './components/page/ConnectWallet';
 import Pagenotfound from './components/page/Pagenotfound';
 import Upload from './components/page/Upload'
 import Blog from './components/page/Blog';
+import SingleBlogNews from './components/singleblogpage/SingleBlogNews';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/explore/:id" component={SingleProduct} />
         <Route exact path="/blog" component={Blog} />
+        <Route exact path="/singlenews" component={SingleBlogNews} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/upload" component={Upload} />
         <Route exact path="/wallet" component={ConnectWallet} />
