@@ -1,5 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import user from '../../assets/img/2/1.png'
+
+
+const getLocalItem = () => {
+    let list = localStorage.getItem('item')
+//    console.log(list);
+
+    if(list){
+        return JSON.parse(localStorage.getItem('item'))
+    } else {
+        return [];
+    }
+}
 
 function Comment() {
 
@@ -13,13 +25,19 @@ function Comment() {
         setState({...state, [e.target.name]: e.target.value})
     }
 
-    const [addItems, setAddItems] = useState([])
+    const [addItems, setAddItems] = useState(getLocalItem())
+    const LOCAL_STORAGE_KEY = 'item'
 
     const itemAdd = async (e) => {
         e.preventDefault();
-        setAddItems([...addItems, {item: state, key: Date.now() }])
+        setAddItems([...addItems, {item: state, key: Date.now() }]);
         setState({name: "", email: "", message: ""})
+
     }
+
+    useEffect(()=>{
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(addItems))
+    }, [addItems])
 
   return (
     <>
