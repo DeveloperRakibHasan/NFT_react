@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import user from '../../assets/img/2/1.png'
+import moment from 'moment';
 
 
 const getLocalItem = () => {
@@ -45,7 +46,8 @@ function Comment() {
 
    {addItems.map((elem, index)=>{
     return(
-        <div key={index} className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
+       <>
+       <div key={index} className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
         <div className='flex items-center'>
             <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
             <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
@@ -54,8 +56,12 @@ function Comment() {
             </div>
         </div>
         <p className='text-gray-500 mt-4'>{elem.item.message}</p>
+        <div className='flex justify-between items-center'>
         <button className='text-blue-500 mt-6 mb-2'>Reply</button>
+        <span className='text-gray-700'> {moment().startOf('hour').fromNow()} </span>
+        </div>
     </div>
+       </>
     )
    })}
 
