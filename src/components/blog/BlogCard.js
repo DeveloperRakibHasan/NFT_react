@@ -2,11 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LinesEllipsis from 'react-lines-ellipsis'
 import user from '../../assets/img/2/1.png'
+import img from '../../assets/img/3/1.png'
 
-function BlogCard({dis, title, img}) {
+function BlogCard ({posts, loading}) {
+  if(loading){
+    return <h2 className='text-white'>Loading...</h2>
+  }
+
   return (
+<>
+{posts.map(item => (
     <Link to='/singlenews'>
-    <div className='bg-[#232738] p-3 rounded-[30px]'>
+    <div key={item.id} className='bg-[#232738] p-3 rounded-[30px]'>
         <div className=' relative text-white'>
         <img className=' w-full lg:max-h-[300px] md:max-h-[200px] sm:max-h-[300px]' src={img} alt="" />
         <span className='px-4 py-2 rounded-3xl bg-[#232738] absolute top-5 left-4'>Design</span>
@@ -14,7 +21,7 @@ function BlogCard({dis, title, img}) {
         <div>
           <div className='px-4 lg:mt-9 md:mt-6 xm:mt-9 '>
           <LinesEllipsis
-            text={title}
+            text={item.title}
             maxLine='1'
             ellipsis='...'
             trimRight
@@ -24,7 +31,7 @@ function BlogCard({dis, title, img}) {
           </div>
           <div className=' mt-3 px-5 pb-2'>
           <LinesEllipsis
-            text={dis}
+            text={item.body}
             maxLine='2'
             ellipsis='...'
             trimRight
@@ -45,6 +52,8 @@ function BlogCard({dis, title, img}) {
         </div>
     </div>
     </Link>
+   ))}
+</>
   )
 }
 

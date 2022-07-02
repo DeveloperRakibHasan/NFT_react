@@ -9,7 +9,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <nav>
-      <ul className='flex gap-8 text-white'>
+      <ul className='flex gap-10 overflow-hidden text-white'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
             <button onClick={() => paginate(number)} className='page-link'>
