@@ -867,6 +867,10 @@ p{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1199,6 +1203,10 @@ p{
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1528,6 +1536,16 @@ p{
   background-color: rgb(41 45 64 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#292D40\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 45 64 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -1554,6 +1572,10 @@ p{
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-\[100px\] {
@@ -1898,6 +1920,26 @@ p{
   position: absolute;
 }
 
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:top-auto::before {
+  content: var(--tw-content);
+  top: auto;
+}
+
+.before\:top-\[50\%\]::before {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.before\:left-\[-60px\]::before {
+  content: var(--tw-content);
+  left: -60px;
+}
+
 .before\:mt-3::before {
   content: var(--tw-content);
   margin-top: 0.75rem;
@@ -1908,15 +1950,42 @@ p{
   height: 1px;
 }
 
+.before\:h-\[50px\]::before {
+  content: var(--tw-content);
+  height: 50px;
+}
+
+.before\:h-\[2px\]::before {
+  content: var(--tw-content);
+  height: 2px;
+}
+
 .before\:w-\[80\%\]::before {
   content: var(--tw-content);
   width: 80%;
+}
+
+.before\:w-\[60px\]::before {
+  content: var(--tw-content);
+  width: 60px;
 }
 
 .before\:bg-gray-700::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.before\:bg-\[\#fff\]::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:bg-\[\#292d40\]::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 45 64 / var(--tw-bg-opacity));
 }
 
 .after\:bg-gradient-2::after{
@@ -1929,6 +1998,21 @@ p{
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
+}
+
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.after\:left-\[-60px\]::after {
+  content: var(--tw-content);
+  left: -60px;
 }
 
 .after\:z-\[2\]::after {
@@ -1966,6 +2050,21 @@ p{
   height: 700px;
 }
 
+.after\:h-\[100px\]::after {
+  content: var(--tw-content);
+  height: 100px;
+}
+
+.after\:h-\[10px\]::after {
+  content: var(--tw-content);
+  height: 10px;
+}
+
+.after\:h-full::after {
+  content: var(--tw-content);
+  height: 100%;
+}
+
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
@@ -1974,6 +2073,16 @@ p{
 .after\:w-\[700px\]::after {
   content: var(--tw-content);
   width: 700px;
+}
+
+.after\:w-1::after {
+  content: var(--tw-content);
+  width: 0.25rem;
+}
+
+.after\:w-\[1px\]::after {
+  content: var(--tw-content);
+  width: 1px;
 }
 
 .after\:rounded-full::after {
@@ -1985,6 +2094,18 @@ p{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.after\:bg-white::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.after\:bg-\[\#292d40\]::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 45 64 / var(--tw-bg-opacity));
 }
 
 .hover\:button-bg:hover{

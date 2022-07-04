@@ -38,7 +38,17 @@ function Comment() {
 
     useEffect(()=>{
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(addItems))
-    }, [addItems])
+    }, [addItems]);
+
+    const [comment, setComment] = useState(false)
+
+    const [replayComment, setReplayComment] = useState('')
+    const [replayAdd, setReplayAdd] = useState([]);
+
+    const addReplay = () => {
+        setReplayAdd([...replayAdd, replayComment]);
+        setReplayComment('')
+    }
 
   return (
     <>
@@ -57,14 +67,36 @@ function Comment() {
         </div>
         <p className='text-gray-500 mt-4'>{elem.item.message}</p>
         <div className='flex justify-between items-center'>
-        <button className='text-blue-500 mt-6 mb-2'>Reply</button>
+        <button onClick={() => setComment(!comment)} className='text-blue-500 mt-6 mb-2'>Reply</button>
         <span className='text-gray-700'> {moment().startOf('hour').fromNow()} </span>
         </div>
     </div>
        </>
     )
    })}
-
+   <div>
+        {
+            replayAdd.map((elem, index) => {
+                return(
+                    <div className='relative border border-[#292d40] rounded-[18px] mb-[30px] p-6 ml-[100px] before:absolute before:w-[60px] before:h-[1px] before:bg-[#292d40] before:left-[-60px] before:top-[50%] after:absolute after:w-[1px] after:h-full after:top-0 after:left-[-60px] after:bg-[#292d40] '>
+                        <div className='flex items-center'>
+                            <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
+                            <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
+                                <b>Alfonso Likens</b>
+                                <p>writer</p>
+                            </div>
+                        </div>
+                        <p className='text-gray-500 mt-4'>{elem}</p>
+                        <button className='text-blue-500 mt-6 mb-2'>Reply</button>
+                    </div>
+                )
+            })
+        }
+    </div>
+    <div className={comment? 'w-full mb-10 block':'w-full mb-10 hidden'}>
+        <input name='replay' value={replayComment} onChange={(e)=> setReplayComment(e.target.value)} type='text' className='bg-[#292D40] text-white p-4 rounded-md focus:outline-none w-full' placeholder='Comment..' />
+        <button onClick={addReplay} className='p-2 mt-4 rounded-md text-white button-bg'>sent comment</button>
+    </div>
 
     <div className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
     <h5 className='text-white mb-10'>Leave a reply</h5>
