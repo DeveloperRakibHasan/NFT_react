@@ -1701,10 +1701,6 @@ p{
   padding-bottom: 2.5rem;
 }
 
-.pb-\[30px\] {
-  padding-bottom: 30px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1827,6 +1823,11 @@ p{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .text-\[\#65696B\] {
   --tw-text-opacity: 1;
   color: rgb(101 105 107 / var(--tw-text-opacity));
@@ -1850,16 +1851,6 @@ p{
 .text-\[\#67737D\] {
   --tw-text-opacity: 1;
   color: rgb(103 115 125 / var(--tw-text-opacity));
-}
-
-.text-\[\#292d40\] {
-  --tw-text-opacity: 1;
-  color: rgb(41 45 64 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .opacity-0 {

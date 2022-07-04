@@ -46,10 +46,10 @@ function NavSearch() {
                     </NavLink>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem1(!showItem1)}>
-                    <Link className='items-center flex ml-10 text-[18px]'>
+                    <span className='items-center flex ml-10 text-[18px] cursor-pointer'>
                         Explore
                         <IoMdAddCircle className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className={showItem1 ?'active-dropdown duration-200 ml-14':'d-none'}>
                         <li className='py-2 border-b'><Link to='/explore'>Product</Link></li>
                         <li className='py-2 border-b'><Link>Explore 2</Link></li>
@@ -57,10 +57,10 @@ function NavSearch() {
                     </ul>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem2(!showItem2)}>
-                    <Link className='flex items-center ml-10 text-[18px]'>
+                    <span className='flex items-center ml-10 text-[18px] cursor-pointer'>
                         Pages
                         <IoMdAddCircle className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className={showItem2 ?'active-dropdown duration-200 ml-14':'d-none' }>
                         <li className='py-2 border-b'><Link>Pages 1</Link></li>
                         <li className='py-2 border-b'><Link>Pages 2</Link></li>
@@ -68,10 +68,10 @@ function NavSearch() {
                     </ul>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem3(!showItem3)}>
-                    <Link className='flex items-center ml-10 text-[18px]'>
+                    <span className='flex items-center ml-10 text-[18px] cursor-pointer'>
                         Blog
                         <IoMdAddCircle className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className={showItem3 ?'active-dropdown duration-200 ml-14':'d-none'}>
                         <li className='py-2 border-b'><NavLink exact to='/blog'>All Blog</NavLink></li>
                         <li className='py-2 border-b'><Link>Blog 2</Link></li>
