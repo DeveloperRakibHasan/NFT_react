@@ -1,17 +1,36 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import LinesEllipsis from 'react-lines-ellipsis'
 import user from '../../assets/img/2/1.png'
 import img from '../../assets/img/3/1.png'
+import ReactPaginate from 'react-paginate'
+import '../css/Pagination.css'
 
-function BlogCard ({posts, loading}) {
-  if(loading){
-    return <h2 className='text-white'>Loading...</h2>
-  }
+function BlogCard (props) {
+
+  const { data } = props;
+
+  const [currentItems, setCurrentItems] = useState([]);
+  const [pageCount, setPageCount] = useState(0);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 4;
+
+  useEffect(() => {
+    // Fetch items from another resources.
+    const endOffset = itemOffset + itemsPerPage;
+    setCurrentItems(data.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(data.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage,data]);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % data.length;
+    setItemOffset(newOffset);
+  };
 
   return (
 <>
-{posts.map(item => (
+{currentItems.map(item => (
     <Link to='/singlenews'>
     <div key={item.id} className='bg-[#232738] p-3 rounded-[30px]'>
         <div className=' relative text-white'>
@@ -53,6 +72,23 @@ function BlogCard ({posts, loading}) {
     </div>
     </Link>
    ))}
+
+  <div className='mt-[130px]'>
+  <ReactPaginate
+        breakLabel=".."
+        // nextLabel="next >"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={0}
+        pageCount={pageCount}
+        // previousLabel="< previous"
+        renderOnZeroPageCount={null}
+        containerClassName='pagination'
+        pageLinkClassName='page-num'
+        previousLinkClassName='page-prev'
+        nextLinkClassName='page-next'
+        activeLinkClassName='page-active'
+      />
+  </div>
 </>
   )
 }

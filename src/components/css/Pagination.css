@@ -1,0 +1,16 @@
+.pagination{
+ @apply flex gap-[10px] text-white
+}
+.page-num{
+    @apply py-4 px-5 bg-[#232738] rounded-[10px]
+}
+.page-next{
+    @apply py-4 px-5 bg-[#232738] rounded-[10px]
+}
+.page-prev{
+    @apply py-4 px-5 bg-[#232738] rounded-[10px]
+}
+
+.page-active{
+ background: linear-gradient(180.66deg, rgba(207, 116, 255, 0.8) -49.75%, rgba(27, 89, 237, 0.8) 186.2%);
+}

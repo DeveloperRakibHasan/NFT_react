@@ -1205,6 +1205,10 @@ p{
   margin-left: 64px;
 }
 
+.mt-\[130px\] {
+  margin-top: 130px;
+}
+
 .block {
   display: block;
 }
@@ -1421,6 +1425,10 @@ p{
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .overflow-hidden {
@@ -1788,6 +1796,10 @@ p{
 
 .pb-\[30px\] {
   padding-bottom: 30px;
+}
+
+.pt-\[130px\] {
+  padding-top: 130px;
 }
 
 .text-center {
