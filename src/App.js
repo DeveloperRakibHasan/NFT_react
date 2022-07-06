@@ -11,6 +11,8 @@ import Pagenotfound from './components/page/Pagenotfound';
 import Upload from './components/page/Upload'
 import Blog from './components/page/Blog';
 import SingleBlogNews from './components/singleblogpage/SingleBlogNews';
+// import ExampleComment from './components/page/ExampleComment';
+import SingleUplode from './components/page/SingleUplode';
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/explore/:id" component={SingleProduct} />
         <Route exact path="/blog" component={Blog} />
+        {/* <Route exact path="/comment" component={ExampleComment} /> */}
         <Route exact path="/singlenews" component={SingleBlogNews} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/upload" component={Upload} />
+        <Route exact path="/upload/single" component={SingleUplode} />
         <Route exact path="/wallet" component={ConnectWallet} />
         <Route exact component={Pagenotfound} />
       </Switch>

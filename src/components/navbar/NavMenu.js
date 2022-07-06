@@ -52,7 +52,7 @@ function NavMenu() {
                     </Link>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/blog'>All Blog</Link></li>
-                        <li className='my-2'><Link>Blog 2</Link></li>
+                        <li className='my-2'><Link to='/comment'>Comment</Link></li>
                         <li className='my-2'><Link>Blog 3</Link></li>
                     </ul>
                 </li>

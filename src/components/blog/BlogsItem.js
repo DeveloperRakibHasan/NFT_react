@@ -3,9 +3,9 @@ import BlogCard from './BlogCard'
 import RecentArticles from './RecentArticles'
 import BlogCategories from './BlogCategories'
 import BlogConnect from './BlogConnect'
-import Pagination from '../pagination/Pagination'
+// import Pagination from '../pagination/Pagination'
 import axios from 'axios';
-// import ReactPaginate from 'react-paginate';
+import ReactPaginate from 'react-paginate';
 
 function BlogsItem() {
 
@@ -45,7 +45,7 @@ function BlogsItem() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  // const [pageCount, setPageCount] = useState(0);
+  const [pageCount, setPageCount] = useState(0);
   const [postsPerPage] = useState(4);
 
   // setPosts([blogCardArray]);
@@ -67,7 +67,7 @@ function BlogsItem() {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  // const paginate = pageNumber => setCurrentPage(pageNumber);
 
   // useEffect(() => {
   //   // Fetch items from another resources.
@@ -78,13 +78,13 @@ function BlogsItem() {
   // }, [currentPage, postsPerPage]);
 
    // Invoke when user click to request another page.
-  //  const handlePageClick = (event) => {
-  //   const newOffset = (event.selected * postsPerPage) % posts.length;
-  //   console.log(
-  //     `User requested page number ${event.selected}, which is offset ${newOffset}`
-  //   );
+   const handlePageClick = (event) => {
+    const newOffset = (event.selected * postsPerPage) % posts.length;
+    console.log(
+      `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
    
-  // };
+  };
 
 
 
@@ -92,23 +92,23 @@ function BlogsItem() {
     <div className='container py-10'>
         <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 xm:grid-cols-1 gap-8'>
             <BlogCard posts={currentPosts} loading={loading}/>
-            <Pagination
+            {/* <Pagination
               postsPerPage={postsPerPage}
               totalPosts={posts.length}
               paginate={paginate}
-            />
-            {/* <ReactPaginate
-        breakLabel="..."
-        nextLabel="next >"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={4}
-        postsPerPage={postsPerPage}
-        pageCount={pageCount}
-        previousLabel="< previous"
-        renderOnZeroPageCount={null}
-        totalPosts={posts.length}
-              paginate={paginate}
-      /> */}
+            /> */}
+            <ReactPaginate
+              breakLabel="..."
+              nextLabel="next >"
+              onPageChange={handlePageClick}
+              pageRangeDisplayed={4}
+              postsPerPage={postsPerPage}
+              pageCount={pageCount}
+              previousLabel="< previous"
+              renderOnZeroPageCount={null}
+              totalPosts={posts.length}       
+              />
+
             <div className=' lg:col-start-3 md:col-start-2 xm:col-start-1 md:row-start-1 xm:row-start-auto row-span-6'>
                <RecentArticles/>
                <BlogCategories/>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Footer from '../footer/Footer'
 import upload from '../../assets/img/wallet/upload.png'
 import uploads from '../../assets/img/wallet/uploads.png'
@@ -16,12 +17,22 @@ function ConnectWallet() {
                             <div className='bg-[#2A2E3F] w-full text-center mx-auto rounded-3xl py-10 px-8'>
                                 <img className='mx-auto' src={upload} alt='' />
                                 <p className='font-bold text-white mt-6 text-[20px]'>Create Single</p>
-                                <button className=' relative py-4 px-8 rounded-[10px] mt-5 text-white button-bg duration-200'><label for='upload-photo' className=' cursor-pointer'>Create Single</label><input id="upload-photo" type="file" /></button>
+                                <Link to='/upload/single'>
+                                <button to='/upload/single' className=' relative py-4 px-8 rounded-[10px] mt-5 text-white button-bg duration-200'>
+                                <label for='upload-photo' className=' cursor-pointer'>Create Single</label>
+                                <input id="upload-photo" type="file" />
+                                </button>
+                                </Link>
                             </div>
                             <div className='bg-[#2A2E3F] w-full text-center mx-auto rounded-3xl py-10 px-8'>
                                 <img className='mx-auto' src={uploads} alt='' />
                                 <p className='font-bold text-white mt-6 text-[20px]'>Create Multiple</p>
-                                <button className=' relative py-4 px-8 rounded-[10px] mt-5 text-white button-bg duration-200'><label for='upload-photo' className=' cursor-pointer'>Create Multiple</label><input id="upload-photo" type="file" /></button>
+                                <Link>
+                                <button className=' relative py-4 px-8 rounded-[10px] mt-5 text-white button-bg duration-200'>
+                                <label for='upload-photo' className=' cursor-pointer'>Create Multiple</label>
+                                <input id="upload-photo" type="file" />
+                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

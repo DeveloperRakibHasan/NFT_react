@@ -37,7 +37,7 @@ function BlogNewsItem() {
        <div className='lg:col-start-1 md:col-start-1 xm:row-start-auto col-span-2 mt-[30px]'>
         <div className='bg-[#232738] rounded-[30px] px-9 py-6'>
         <h4 className='text-white font-bold mb-8'>Comment</h4>
-        <div className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
+        <div className='border border-[#2F384A] rounded-[18px] mb-[30px] p-6'>
         <div className='flex items-center'>
             <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
             <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>

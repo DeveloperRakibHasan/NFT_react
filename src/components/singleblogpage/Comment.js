@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import user from '../../assets/img/2/1.png'
 import moment from 'moment';
+// import { GrFormClose } from "react-icons/gr";
 
 
 const getLocalItem = () => {
@@ -46,8 +47,13 @@ function Comment() {
     const [replayAdd, setReplayAdd] = useState([]);
 
     const addReplay = () => {
-        setReplayAdd([...replayAdd, replayComment]);
-        setReplayComment('')
+        if(replayComment === '') {
+            alert("type your comment")
+        } else {
+            setReplayAdd([...replayAdd, replayComment]);
+            setReplayComment('')
+        }
+        
     }
 
   return (
@@ -57,7 +63,7 @@ function Comment() {
    {addItems.map((elem, index)=>{
     return(
        <>
-       <div key={index} className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
+       <div key={index} className='border border-[#2F384A] rounded-[18px] mb-[30px] p-6'>
         <div className='flex items-center'>
             <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
             <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
@@ -71,6 +77,7 @@ function Comment() {
         <span className='text-gray-700'> {moment().startOf('hour').fromNow()} </span>
         </div>
     </div>
+    
        </>
     )
    })}
@@ -78,7 +85,7 @@ function Comment() {
         {
             replayAdd.map((elem, index) => {
                 return(
-                    <div className='relative border border-[#292d40] rounded-[18px] mb-[30px] p-6 ml-[100px] before:absolute before:w-[60px] before:h-[1px] before:bg-[#292d40] before:left-[-60px] before:top-[50%] after:absolute after:w-[1px] after:h-full after:top-0 after:left-[-60px] after:bg-[#292d40] '>
+                    <div key={index} className='relative border border-[#2F384A] rounded-[18px] mb-[30px] p-6 ml-[100px] before:absolute before:w-[60px] before:h-[1px] before:bg-[#2F384A] before:left-[-60px] before:top-[50%] after:absolute after:w-[1px] after:h-full after:top-0 after:left-[-60px] after:bg-[#2F384A] '>
                         <div className='flex items-center'>
                             <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
                             <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
@@ -94,11 +101,12 @@ function Comment() {
         }
     </div>
     <div className={comment? 'w-full mb-10 block':'w-full mb-10 hidden'}>
-        <input name='replay' value={replayComment} onChange={(e)=> setReplayComment(e.target.value)} type='text' className='bg-[#292D40] text-white p-4 rounded-md focus:outline-none w-full' placeholder='Comment..' />
+        <input name='replay' required value={replayComment} onChange={(e)=> setReplayComment(e.target.value)} type='text' className='bg-[#292D40] text-white p-4 rounded-md relative focus:outline-none w-full' placeholder='Comment..' />
+        {/* <span className=' absolute'><GrFormClose/></span> */}
         <button onClick={addReplay} className='p-2 mt-4 rounded-md text-white button-bg'>sent comment</button>
     </div>
 
-    <div className='border border-[#292d40] rounded-[18px] mb-[30px] p-6'>
+    <div className='border border-[#2F384A] rounded-[18px] mb-[30px] p-6'>
     <h5 className='text-white mb-10'>Leave a reply</h5>
        <form onSubmit={itemAdd}>
            <div className='flex gap-[30px]'>
