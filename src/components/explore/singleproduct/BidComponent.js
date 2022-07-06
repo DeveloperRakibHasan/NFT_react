@@ -62,28 +62,28 @@ function BidComponent() {
         <div className='flex my-9'>
           <div className='flex items-center'>
             <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 xm:p-1 rounded-xl w-20 text-center'>
-              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.days || '0'}</h4>
+              <h4 className='text-white block xl:text-[25px] sm:text-[20px] xm:text-[18px]'>{state.days || '0'}</h4>
               <span className='text-[#7D8694]'>Days</span>
             </div>
             <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4 xm:ml-2'>:</b>
           </div>
           <div className='flex items-center'>
             <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 xm:p-1 lg:ml-2 md:ml-4 xm:ml-2 rounded-xl 2xl:ml-6 xl:ml-5 w-20 text-center'>
-              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.hours || '00'}</h4>
+              <h4 className='text-white block xl:text-[25px] sm:text-[20px] xm:text-[18px]'>{state.hours || '00'}</h4>
               <span className='text-[#7D8694]'>Hours</span>
             </div>
             <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4 xm:ml-2'>:</b>
           </div>
           <div className='flex items-center'>
             <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 xm:p-1 lg:ml-2 md:ml-4 xm:ml-2 rounded-xl w-20 2xl:ml-6 xl:ml-5 text-center'>
-              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.minutes || '00'}</h4>
+              <h4 className='text-white block xl:text-[25px] sm:text-[20px] xm:text-[18px]'>{state.minutes || '00'}</h4>
               <span className='text-[#7D8694]'>Minutes</span>
             </div>
             <b className='text-white 2xl:ml-7 xl:ml-4 lg:ml-[10px] md:ml-4 xm:ml-2'>:</b>
           </div>
           <div className='flex w-full lg:justify-end md:justify-start items-center'>
             <div className='bg-[#111826] xl:p-3 lg:p-3 md:p-4 xm:p-1 lg:ml-2 md:ml-4 xm:ml-2 rounded-xl w-20 text-center'>
-              <h4 className='text-white block xl:text-[25px] lg:text-[18px]'>{state.seconds || '00'}</h4>
+              <h4 className='text-white block xl:text-[25px] sm:text-[20px] xm:text-[18px]'>{state.seconds || '00'}</h4>
               <span className='text-[#7D8694]'>Seconds</span>
             </div>
           </div> 

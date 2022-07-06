@@ -10,10 +10,10 @@ function BlogConnect() {
         <div className='bg-[#232738] w-full rounded-3xl py-6 xl:px-9 lg:px-4 md:px-8 xm:px-8'>
             <h4 className='text-white font-bold mb-6 text-[18px]'>Let’s connect</h4>
             <div className='flex gap-6 mb-3 w-full'>
-                <img className='w-10 h-10' src={icon} alt='' />
-                <img className='w-10 h-10' src={tw} alt='' />
-                <img className='w-10 h-10' src={instagram} alt='' />
-                <img className='w-10 h-10' src={li} alt='' />
+                <img className='md:w-9 xm:w-6 md:h-9 xm:h-6' src={icon} alt='' />
+                <img className='md:w-9 xm:w-6 md:h-9 xm:h-6' src={tw} alt='' />
+                <img className='md:w-9 xm:w-6 md:h-9 xm:h-6' src={instagram} alt='' />
+                <img className='md:w-9 xm:w-6 md:h-9 xm:h-6' src={li} alt='' />
             </div>
         </div>
     </div>

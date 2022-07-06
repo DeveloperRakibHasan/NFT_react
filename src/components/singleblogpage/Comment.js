@@ -66,14 +66,14 @@ function Comment() {
        <div key={index} className='border border-[#2F384A] rounded-[18px] mb-[30px] p-6'>
         <div className='flex items-center'>
             <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
-            <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
+            <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] xm:text-[14px] text-gray-400'>
                 <b>{elem.item.name}</b>
                 <p>{elem.item.email}</p>
             </div>
         </div>
-        <p className='text-gray-500 mt-4'>{elem.item.message}</p>
+        <p className='text-gray-500 mt-4 xm:text-[12px] sm:text-[14px] md:text-[16px]'>{elem.item.message}</p>
         <div className='flex justify-between items-center'>
-        <button onClick={() => setComment(!comment)} className='text-blue-500 mt-6 mb-2'>Reply</button>
+        <button onClick={() => setComment(!comment)} className='text-blue-500 mt-6 mb-2 xm:text-[14px] md:text-[16px]'>Reply</button>
         <span className='text-gray-700'> {moment().startOf('hour').fromNow()} </span>
         </div>
     </div>
@@ -109,8 +109,8 @@ function Comment() {
     <div className='border border-[#2F384A] rounded-[18px] mb-[30px] p-6'>
     <h5 className='text-white mb-10'>Leave a reply</h5>
        <form onSubmit={itemAdd}>
-           <div className='flex gap-[30px]'>
-               <div className='w-5/12'>
+           <div className='md:flex col gap-[30px]'>
+               <div className='md:w-5/12 xm:w-full'>
                    <div className='mb-[30px]'>
                        <label className='block mb-4 text-gray-500'>Your Name</label>
                        <input required type='text' name='name' value={state.name} onChange={onChange} className='px-5 py-3 bg-[#292d40] text-gray-300 w-full rounded-lg' placeholder='Example John' />
@@ -120,7 +120,7 @@ function Comment() {
                        <input required type='text' name='email' value={state.email} onChange={onChange} className='px-5 py-3 bg-[#292d40] text-gray-300 w-full rounded-lg' placeholder='Example @email' />
                    </div>
                </div>
-               <div className='w-7/12'>
+               <div className='md:w-7/12 xm:w-full xm:mt-[30px] md:mt-0'>
                    <label className='block mb-4 text-gray-500'>Message</label>
                    <textarea required type='text' name='message' value={state.message} onChange={onChange} className='px-5 py-3 bg-[#292d40] text-gray-300 w-full h-[166px] resize-none rounded-lg' placeholder='Example message' />
                </div>

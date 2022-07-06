@@ -38,7 +38,7 @@ function BlogCard (props) {
         <span className='px-4 py-2 rounded-3xl bg-[#232738] absolute top-5 left-4'>Design</span>
         </div>
         <div>
-          <div className='px-4 lg:mt-9 md:mt-6 xm:mt-9 '>
+          <div className='lg:px-4 md:px-2 xm:px-4 lg:mt-9 md:mt-6 xm:mt-9 '>
           <LinesEllipsis
             text={item.title}
             maxLine='1'
@@ -48,7 +48,7 @@ function BlogCard (props) {
             className='text-white font-bold overflow-ellipsis 2xl:text-[22px] xl:text-[20px] md:text-[18px] xm:text-[16px]'
           />
           </div>
-          <div className=' mt-3 px-5 pb-2'>
+          <div className=' mt-3 lg:px-5 md:px-2 xm:px-4 pb-2'>
           <LinesEllipsis
             text={item.body}
             maxLine='2'
@@ -58,10 +58,10 @@ function BlogCard (props) {
             className='lg:text-[16px] md:text-[14px] overflow-ellipsis text-gray-400'
           />
           </div>
-          <div className='flex justify-between items-center 2xl:px-5 xl:px-4 md:px-4 sm:mt-5 xm:mt-2 mb-6'>
+          <div className='flex justify-between items-center 2xl:px-5 xl:px-4 md:px-2 sm:mt-5 xm:px-4 xm:mt-2 mb-6'>
             <div className='flex items-center'>
               <img className='w-[50px] h-[50px] rounded-full' src={user} alt="" />
-              <div className='xl:ml-5 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
+              <div className='2xl:ml-5 xl:ml-3 md:ml-3 xm:ml-5 xl:text-[16px] lg:text-[14px] text-gray-400'>
                 <b>Alfonso Likens</b>
                 <p>writer</p>
               </div>
@@ -73,14 +73,12 @@ function BlogCard (props) {
     </Link>
    ))}
 
-  <div className='mt-[130px]'>
-  <ReactPaginate
+  <div className='md:mt-[130px] xm:mt-[50px] xm:mb-10 md:mb-0'>
+    <ReactPaginate
         breakLabel=".."
-        // nextLabel="next >"
         onPageChange={handlePageClick}
         pageRangeDisplayed={0}
         pageCount={pageCount}
-        // previousLabel="< previous"
         renderOnZeroPageCount={null}
         containerClassName='pagination'
         pageLinkClassName='page-num'

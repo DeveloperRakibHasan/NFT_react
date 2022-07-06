@@ -19,9 +19,9 @@ function BlogsItem() {
 
   return (
     <div className='container py-10'>
-        <div className='grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 xm:grid-cols-1 gap-8'>
+        <div className='grid grid-flow-row xl:grid-cols-3 md:grid-cols-2 xm:grid-cols-1 gap-8'>
             <BlogCard data={posts} />
-            <div className=' lg:col-start-3 md:col-start-2 xm:col-start-1 md:row-start-1 xm:row-start-auto row-span-6'>
+            <div className=' xl:col-start-3 md:col-start-2 xm:col-start-1 md:row-start-1 xm:row-start-auto row-span-6'>
                <RecentArticles/>
                <BlogCategories/>
                 <BlogConnect />

@@ -60,15 +60,15 @@ export default function SingleProductSlider() {
         className="mySwiper mt-10 md:mb-[100px] xm:mb-16"
       >
        <SwiperSlide>
-          <img className="border-[10px] border-[#3F454E] w-[160px] 2xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg} alt='' />
+          <img className="border-[10px] border-[#3F454E] w-[160px] xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className="border-[10px] border-[#3F454E] w-[160px] 2xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg1} alt='' />
+          <img className="border-[10px] border-[#3F454E] w-[160px] xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg1} alt='' />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className="border-[10px] border-[#3F454E] w-[160px] 2xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg2} alt='' />
+          <img className="border-[10px] border-[#3F454E] w-[160px] xl:h-[122px] lg:h-[80px] md:h-[122px] sm:h-[80px] rounded-[20px]" src={sliderImg2} alt='' />
         </SwiperSlide>
       </Swiper>
     </>
