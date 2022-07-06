@@ -6,8 +6,8 @@ function AntiqCard() {
 
   return (
     <>
-        <div className='card-bg-gradient 2xl:w-[600px] xl:w-[500px] xm:overflow-hidden mt-[-20px]'></div>
-        <div className=' grid grid-flow-row grid-cols-2 xl:gap-8 lg:gap-4 md:gap-8 sm:gap-4 sm:overflow-x-hidden xm:gap-2 float-right mb-10 z-10 relative'>
+        <div className='card-bg-gradient 2xl:w-[600px] xl:w-[500px] mt-[-20px]'></div>
+        <div className=' grid grid-flow-row grid-cols-2 xl:gap-8 lg:gap-4 md:gap-8 sm:gap-4 xm:gap-2 float-right mb-10 z-10 relative'>
             <AntqCards
             className="anime"
             title="Antique"

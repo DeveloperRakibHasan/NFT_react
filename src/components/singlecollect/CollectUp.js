@@ -6,10 +6,10 @@ function CollectUp() {
     <div>
         <h2 className='text-white font-bold text-center mt-10'>Create single collectible</h2>
         <div className='container'>
-            <div className='w-10/12 mx-auto bg-[#20202A] p-10 my-12 rounded-3xl'>
-              <div className='grid grid-flow-row grid-cols-2'>
+            <div className='md:w-10/12 xm:w-full mx-auto bg-[#20202A] p-10 my-12 rounded-3xl'>
+              <div className='grid 2xl:gap-10 lg:gap-0 xm:gap-10 grid-flow-row lg:grid-cols-2 xm:grid-cols-1'>
                 <div>
-                  <div className='w-[460px] h-[430px] bg-[#2A2E3F] rounded-[10px] flex justify-center text-center items-center'>
+                  <div className='lg:w-11/12 xm:w-full lg:h-[430px] xm:h-[300px] p-10 bg-[#2A2E3F] rounded-[10px] flex justify-center text-center items-center'>
                     <div className='text-white'>
                      <img className='mb-4 mx-auto relative' src={Addimg} alt="" /> 
                      <input type='file' className='absolute mt-[-83px] w-[70px] ml-[64px] h-[67px] opacity-0' />
@@ -39,7 +39,7 @@ function CollectUp() {
                   </select>
                 </span>
                 <div className='flex gap-[30px] w-full'>
-                  <button className='font-boldpy-5 px-10 bg-[#2A2E3F] text-white w-5/12 rounded-[10px] hover:button-bg duration-200'>Preview</button>
+                  <button className='font-boldpy-5 md:px-10 bg-[#2A2E3F] text-white w-5/12 rounded-[10px] hover:button-bg duration-200'>Preview</button>
                   <button className='py-5 px-10 button-bg w-7/12 text-white rounded-[10px]'>Submit</button>
                 </div>
                </div>

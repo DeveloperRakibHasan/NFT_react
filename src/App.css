@@ -1331,6 +1331,10 @@ p{
   width: 70px;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -2341,6 +2345,10 @@ p{
     width: 60px;
   }
 
+  .xm\:w-full {
+    width: 100%;
+  }
+
   .xm\:grid-flow-row {
     grid-auto-flow: row;
   }
@@ -2367,6 +2375,10 @@ p{
 
   .xm\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .xm\:gap-10 {
+    gap: 2.5rem;
   }
 
   .xm\:overflow-hidden {
@@ -2771,6 +2783,11 @@ p{
   .sm\:py-\[120px\] {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .sm\:pt-10 {
@@ -3306,6 +3323,10 @@ p{
     height: 172px;
   }
 
+  .lg\:h-\[430px\] {
+    height: 430px;
+  }
+
   .lg\:max-h-\[300px\] {
     max-height: 300px;
   }
@@ -3364,6 +3385,10 @@ p{
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:border-0 {
@@ -3656,6 +3681,14 @@ p{
     gap: 2rem;
   }
 
+  .xl\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
+  }
+
   .xl\:border-r {
     border-right-width: 1px;
   }
@@ -3840,6 +3873,10 @@ p{
 
   .\32xl\:gap-\[240px\] {
     gap: 240px;
+  }
+
+  .\32xl\:gap-10 {
+    gap: 2.5rem;
   }
 
   .\32xl\:p-8 {

@@ -24,10 +24,10 @@ function NavMenu() {
                     </NavLink>
                 </li>
                 <li className='nav-link group'>
-                    <Link className='items-center flex'>
+                    <span className='items-center cursor-pointer flex'>
                         Explore
                         <FaAngleDown className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/explore'>Product</Link></li>
                         <li className='my-2'><Link>Explore 2</Link></li>
@@ -35,10 +35,10 @@ function NavMenu() {
                     </ul>
                 </li>
                 <li className='nav-link group'>
-                    <Link className='flex items-center'>
+                    <span className='flex cursor-pointer items-center'>
                         Pages
                         <FaAngleDown className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link>Pages 1</Link></li>
                         <li className='my-2'><Link>Pages 2</Link></li>
@@ -46,10 +46,10 @@ function NavMenu() {
                     </ul>
                 </li>
                 <li className='nav-link group'>
-                    <Link className='flex items-center'>
+                    <span className='flex cursor-pointer items-center'>
                         Blog
                         <FaAngleDown className='ml-1 font-extralight' />
-                    </Link>
+                    </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/blog'>All Blog</Link></li>
                         <li className='my-2'><Link to='/comment'>Comment</Link></li>
