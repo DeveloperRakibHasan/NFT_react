@@ -5,6 +5,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdAddCircle } from "react-icons/io";
 import { GrClose } from "react-icons/gr";
+import { RiCloseFill } from "react-icons/ri";
 
 
 function NavSearch() {
@@ -21,7 +22,7 @@ function NavSearch() {
     <div className='flex items-center'>
         <div className='mr-9'>
           <input placeholder='Search..' className={active?'search_input search-active duration-300':'search_input duration-300'} type="text" name="search" />
-          <button onClick={()=> setActive(!active)} className=' absolute ml-[-10px] mt-[6px]'><FiSearch className={active?' font-semibold text-[20px] text-[#fff] duration-150 leading-7':' font-semibold text-[20px] text-[#566FFE] leading-7'} /></button>
+          <button onClick={()=> setActive(!active)} className=' absolute ml-[-10px] mt-[6px]'>{active ? <RiCloseFill className=' font-semibold text-[20px] text-white leading-7'/>:<FiSearch className=' font-semibold text-[20px] text-[#566FFE] leading-7'/>}</button>
         </div>
         <div className='2xl:mr-9 xl:mr-4 lg:mr-3'>
             <NavLink exact to='/upload' className='flex font-medium text-[#566FFE] cursor-pointer'><label for="upload-photo" className='cursor-pointer'>Upload</label> <HiOutlineUpload className='ml-2 xl:mr-0 md:mr-2 sm:mr-2 xm:mr-2 lg:mr-4 text-[20px]' /></NavLink>

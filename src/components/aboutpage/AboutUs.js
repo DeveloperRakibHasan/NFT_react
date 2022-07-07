@@ -8,6 +8,7 @@ function AboutUs() {
     AOS.init();
   return (
     <div className='bg-[#111826] w-full h-full py-[100px]'>
+    <span className='z-[5] relative after:absolute after:z-[2] after:bg-gradient-2 after:w-[700px] after:h-[700px] after:rounded-full after:mt-[-550px] after:ml-[-300px]'></span>
         <div className='container'>
             <div className='grid grid-flow-row md:grid-cols-2 sm:grid-cols-1'>
                 <div className='xl:w-[570px] lg:w-[470px] h-full bg-gradient-1 rounded-[30px] md:block sm:hidden'>

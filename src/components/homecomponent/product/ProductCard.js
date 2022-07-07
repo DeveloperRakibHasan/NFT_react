@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import user from '../../../assets/img/user/1.png'
 import user1 from '../../../assets/img/user/2.png'
 import user2 from '../../../assets/img/user/3.png'
@@ -8,7 +9,8 @@ import { BiShareAlt } from "react-icons/bi";
 
 function ProductCard(props) {
   return (
-    <div className='bg-[#232738] p-3 rounded-[30px]'>
+    <Link to={`/explore/${props.singleProductLink}`}>
+      <div className='bg-[#232738] p-3 rounded-[30px]'>
         <img className='w-full' src={props.bgImage} alt="" />
         <div>
           <div className='flex justify-between mt-4 px-5'>
@@ -31,6 +33,7 @@ function ProductCard(props) {
           </div>
         </div>
     </div>
+    </Link>
   )
 }
 
