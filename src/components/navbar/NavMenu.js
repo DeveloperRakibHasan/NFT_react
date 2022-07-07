@@ -30,8 +30,8 @@ function NavMenu() {
                     </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/explore'>Product</Link></li>
-                        <li className='my-2'><Link>Explore 2</Link></li>
-                        <li className='my-2'><Link>Explore 3</Link></li>
+                        <li className='my-2 cursor-pointer'>Explore 2</li>
+                        <li className='my-2 cursor-pointer'>Explore 3</li>
                     </ul>
                 </li>
                 <li className='nav-link group'>
@@ -40,9 +40,9 @@ function NavMenu() {
                         <FaAngleDown className='ml-1 font-extralight' />
                     </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
-                        <li className='my-2'><Link>Pages 1</Link></li>
-                        <li className='my-2'><Link>Pages 2</Link></li>
-                        <li className='my-2'><Link>Pages 3</Link></li>
+                        <li className='my-2 cursor-pointer'>Pages 1</li>
+                        <li className='my-2 cursor-pointer'>Pages 2</li>
+                        <li className='my-2 cursor-pointer'>Pages 3</li>
                     </ul>
                 </li>
                 <li className='nav-link group'>
@@ -52,8 +52,8 @@ function NavMenu() {
                     </span>
                     <ul className='group-hover:active-dropdown invisible group-hover:visible group-hover:duration-200 duration-75'>
                         <li className='my-2'><Link to='/blog'>All Blog</Link></li>
-                        <li className='my-2'><Link to='/comment'>Comment</Link></li>
-                        <li className='my-2'><Link>Blog 3</Link></li>
+                        <li className='my-2 cursor-pointer'>Comment</li>
+                        <li className='my-2 cursor-pointer'>Blog 3</li>
                     </ul>
                 </li>
                 <li className='nav-link mr-0'>
