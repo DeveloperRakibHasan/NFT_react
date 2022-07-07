@@ -13,24 +13,24 @@ function ContactFrom() {
                 <h4 className='mb-6 text-white sm:text-[25px] xm:text-[20px]'>Send us message</h4>
                 <div className='grid grid-flow-row grid-cols-2 gap-5'>
                 <div className='md:mb-4 sm:mb-2'>
-                    <span className='block font-semibold text-white mb-4 sm:text-[16px] xm:text-[12px]'>Your Name</span>
-                    <input className='sm:p-3 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your name' name='name' />
+                    <span className='block font-semibold text-gray-400 mb-4 sm:text-[16px] xm:text-[12px]'>Your Name</span>
+                    <input className='sm:p-3 md:p-4 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your name' name='name' />
                 </div>
                 <div className='md:mb-4 sm:mb-2'>
-                    <span className='block font-semibold mb-4 text-white sm:text-[16px] xm:text-[12px]'>Your Email</span>
-                    <input className='sm:p-3 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your email' name='name' />
+                    <span className='block font-semibold mb-4 text-gray-400 sm:text-[16px] xm:text-[12px]'>Your Email</span>
+                    <input className='sm:p-3 md:p-4 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full' type='text' placeholder='type your email' name='name' />
                 </div>
                 <div className='md:mb-4 sm:mb-2'>
-                    <span className='block font-semibold mb-4 text-white sm:text-[16px] xm:text-[12px]'>Subject</span>
-                    <select className='sm:p-3 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full text-gray-400' >
+                    <span className='block font-semibold mb-4 text-gray-400 sm:text-[16px] xm:text-[12px]'>Subject</span>
+                    <select className='sm:p-3 md:p-4 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full text-gray-400' >
                         <option>chooce your subject</option>
                         <option>Sell</option>
                         <option>Buy</option>
                     </select>
                 </div>
                 <div className='md:mb-4 sm:mb-2'>
-                    <span className='block font-semibold mb-4 text-white sm:text-[16px] xm:text-[12px]'>Select Country</span>
-                    <select className='sm:p-3 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full text-gray-400' >
+                    <span className='block font-semibold mb-4 text-gray-400 sm:text-[16px] xm:text-[12px]'>Select Country</span>
+                    <select className='sm:p-3 md:p-4 sm:text-[16px] xm:text-[14px] xm:p-2 bg-[#111826] rounded-xl w-full text-gray-400' >
                         <option>select your country</option>
                         <option>USA</option>
                         <option>UK</option>
@@ -40,7 +40,7 @@ function ContactFrom() {
                     </select>
                 </div>
                 <div className='col-span-2'>
-                    <span className='block font-semibold mb-4 text-white sm:text-[16px] xm:text-[12px]'>Message</span>
+                    <span className='block font-semibold mb-4 text-gray-400 sm:text-[16px] xm:text-[12px]'>Message</span>
                     <textarea className='sm:p-3 sm:text-[16px] xm:text-[14px] xm:p-2 md:h-[140px] sm:h-[90px] resize-none bg-[#111826] rounded-xl w-full' type='text' placeholder='type your message' name='name' />
                 </div>
                 </div>

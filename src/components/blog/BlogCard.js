@@ -78,6 +78,7 @@ function BlogCard (props) {
         breakLabel=".."
         onPageChange={handlePageClick}
         pageRangeDisplayed={0}
+        marginPagesDisplayed={1}
         pageCount={pageCount}
         renderOnZeroPageCount={null}
         containerClassName='pagination'
