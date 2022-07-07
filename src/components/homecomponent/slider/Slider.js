@@ -28,7 +28,7 @@ function Slider() {
                 </div>
                 <Subscribe />
               </div>
-              <div className='lg:mt-0 lg:block md:mt-[100px] sm:grid md:flex md:justify-center'>
+              <div className='lg:mt-0 lg:block md:mt-[100px] xm:grid md:flex md:justify-center'>
               <img className='lg:block md:hidden sm:hidden xm:hidden absolute mt-[-180px] md:ml-[-120px] xm:ml-0' src={link} alt='' />
                 <AntiqCard />
               </div>

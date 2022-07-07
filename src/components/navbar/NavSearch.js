@@ -4,6 +4,7 @@ import { HiOutlineUpload } from "react-icons/hi";
 import { NavLink, Link } from 'react-router-dom'
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdAddCircle } from "react-icons/io";
+import { GrClose } from "react-icons/gr";
 
 
 function NavSearch() {
@@ -29,11 +30,11 @@ function NavSearch() {
             <NavLink exact to="/wallet"  className='px-4 py-[10px] rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</NavLink>
         </div>
         <div className='mobilemenu-bar xl:hidden lg:block cursor-pointer'>
-          <button onClick={() => setmobileBtnActive(!mobileBtnActive)}><HiOutlineMenuAlt3 className='text-white text-[22px]' /></button>
+          <button onClick={() => setmobileBtnActive(!mobileBtnActive)}> {mobileBtnActive ? <GrClose className='text-white bg-white text-[22px]' /> : <HiOutlineMenuAlt3 className='text-white text-[22px]' />}</button>
         </div>
     </div>
     <div className={mobileBtnActive ? 'w-full h-full xm:block xl:hidden opacity-1 duration-300':'w-full ml-[100px] h-full xm:block invisible xl:hidden opacity-0 duration-300'}>
-        <nav className='absolute w-full min-h-screen overflow-scroll md:top-[71px] sm:top-[68px] xm:top-[68px] py-10 z-[-1] bg-white'>
+        <nav className='absolute w-full min-h-screen md:top-[71px] sm:top-[68px] xm:top-[68px] py-10 z-[-1] bg-white'>
             <ul className=' pt-[7px]'>
                 <li className='py-4 border-b'>
                     <NavLink exact to="/" className='ml-10 text-[18px]' activeClassName=' active-nav'>
@@ -50,7 +51,7 @@ function NavSearch() {
                         Explore
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem1 ?'active-dropdown duration-200 ml-14':'d-none'}>
+                    <ul className={showItem1 ?'active-dropdown duration-200 ml-14 mt-4':'d-none'}>
                         <li className='py-2 border-b'><Link to='/explore'>Product</Link></li>
                         <li className='py-2 border-b'><Link>Explore 2</Link></li>
                         <li className='py-2'><Link>Explore 3</Link></li>
@@ -61,7 +62,7 @@ function NavSearch() {
                         Pages
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem2 ?'active-dropdown duration-200 ml-14':'d-none' }>
+                    <ul className={showItem2 ?'active-dropdown duration-200 ml-14 mt-4':'d-none' }>
                         <li className='py-2 border-b'><Link>Pages 1</Link></li>
                         <li className='py-2 border-b'><Link>Pages 2</Link></li>
                         <li className='py-2'><Link>Pages 3</Link></li>
@@ -72,7 +73,7 @@ function NavSearch() {
                         Blog
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem3 ?'active-dropdown duration-200 ml-14':'d-none'}>
+                    <ul className={showItem3 ?'active-dropdown duration-200 ml-14 mt-4':'d-none'}>
                         <li className='py-2 border-b'><NavLink exact to='/blog'>All Blog</NavLink></li>
                         <li className='py-2 border-b'><Link>Blog 2</Link></li>
                         <li className='py-2'><Link>Blog 3</Link></li>

@@ -125,7 +125,7 @@ function Comment() {
                    <textarea required type='text' name='message' value={state.message} onChange={onChange} className='px-5 py-3 bg-[#292d40] text-gray-300 w-full h-[166px] resize-none rounded-lg' placeholder='Example message' />
                </div>
            </div>
-            <button type='submit' className='button-bg mt-[30px] p-4 w-full rounded-lg text-white font-roboto'>Send Message</button>
+            <button type='submit' className='button-bg mt-[30px] sm:p-4 xm:p-3 w-full rounded-lg text-white font-roboto'>Send Message</button>
        </form>
    </div>
     </>

@@ -1382,12 +1382,24 @@ p{
   gap: 0.5rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .overflow-ellipsis {
@@ -2271,6 +2283,10 @@ p{
     display: block;
   }
 
+  .xm\:flex {
+    display: flex;
+  }
+
   .xm\:grid {
     display: grid;
   }
@@ -2331,6 +2347,10 @@ p{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .xm\:justify-center {
+    justify-content: center;
+  }
+
   .xm\:gap-4 {
     gap: 1rem;
   }
@@ -2369,6 +2389,10 @@ p{
 
   .xm\:p-8 {
     padding: 2rem;
+  }
+
+  .xm\:p-3 {
+    padding: 0.75rem;
   }
 
   .xm\:py-10 {
@@ -2704,6 +2728,10 @@ p{
 
   .sm\:p-8 {
     padding: 2rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:py-\[50px\] {

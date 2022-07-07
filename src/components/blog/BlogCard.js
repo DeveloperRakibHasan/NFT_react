@@ -77,7 +77,7 @@ function BlogCard (props) {
     <ReactPaginate
         breakLabel=".."
         onPageChange={handlePageClick}
-        pageRangeDisplayed={0}
+        pageRangeDisplayed={1}
         marginPagesDisplayed={1}
         pageCount={pageCount}
         renderOnZeroPageCount={null}
