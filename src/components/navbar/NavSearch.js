@@ -16,6 +16,8 @@ function NavSearch() {
   const [showItem3, setShowItem3] = useState(false)
 
   const [mobileBtnActive, setmobileBtnActive] = useState(false)
+
+  const showSidebar = () => setmobileBtnActive(!mobileBtnActive);
  
   return (
     <>
@@ -31,57 +33,57 @@ function NavSearch() {
             <NavLink exact to="/wallet"  className='px-4 py-[10px] rounded-xl button-bg font-medium text-white leading-7 lg:hidden md::hidden sm:hidden xm:hidden xl:block'>Connect Wallet</NavLink>
         </div>
         <div className='mobilemenu-bar xl:hidden lg:block cursor-pointer'>
-          <button onClick={() => setmobileBtnActive(!mobileBtnActive)}> {mobileBtnActive ? <GrClose className='text-white bg-white text-[22px]' /> : <HiOutlineMenuAlt3 className='text-white text-[22px]' />}</button>
+          <button onClick={showSidebar}> {mobileBtnActive ? <GrClose className='text-white bg-white text-[22px]' /> : <HiOutlineMenuAlt3 className='text-white text-[22px]' />}</button>
         </div>
     </div>
     <div className={mobileBtnActive ? 'w-full h-full xm:block xl:hidden opacity-1 duration-300':'w-full ml-[100px] h-full xm:block invisible xl:hidden opacity-0 duration-300'}>
-        <nav className='absolute w-full min-h-screen md:top-[71px] sm:top-[68px] xm:top-[68px] py-10 z-[-1] bg-white'>
-            <ul className=' pt-[7px]'>
-                <li className='py-4 border-b'>
-                    <NavLink exact to="/" className='ml-10 text-[18px]' activeClassName=' active-nav'>
+        <nav className='absolute w-full min-h-screen md:top-[71px] sm:top-[68px] xm:top-[68px] py-10 z-[-1] bg-[#1C1F28]'>
+            <ul className='pt-[7px]'>
+                <li className='py-4 border-b' onClick={showSidebar}>
+                    <NavLink exact to="/" className='ml-10 text-[18px] text-[#9C9FA2]' activeClassName=' active-nav'>
                         Home
                     </NavLink>
                 </li>
-                <li className='py-4 border-b'>
-                    <NavLink exact to="/about" className="ml-10 text-[18px]"  activeClassName=' active-nav'>
+                <li className='py-4 border-b' onClick={showSidebar}>
+                    <NavLink exact to="/about" className="ml-10 text-[18px] text-[#9C9FA2]"  activeClassName=' active-nav'>
                         About Us
                     </NavLink>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem1(!showItem1)}>
-                    <span className='items-center flex ml-10 text-[18px] cursor-pointer'>
+                    <span className='items-center flex ml-10 text-[18px] text-[#9C9FA2] cursor-pointer'>
                         Explore
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem1 ?'active-dropdown duration-200 ml-14 mt-4':'d-none'}>
-                        <li className='py-2 border-b'><Link to='/explore'>Product</Link></li>
-                        <li className='py-2 border-b'><Link>Explore 2</Link></li>
-                        <li className='py-2'><Link>Explore 3</Link></li>
+                    <ul className={showItem1 ?'active-dropdown duration-200 text-[#9C9FA2] ml-14 mt-4':'d-none'}>
+                        <li className='py-2 border-b'><Link to='/explore' onClick={showSidebar}>Product</Link></li>
+                        <li className='py-2 border-b' onClick={showSidebar}><Link>Explore 2</Link></li>
+                        <li className='py-2' onClick={showSidebar}><Link>Explore 3</Link></li>
                     </ul>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem2(!showItem2)}>
-                    <span className='flex items-center ml-10 text-[18px] cursor-pointer'>
+                    <span className='flex items-center ml-10 text-[18px] text-[#9C9FA2] cursor-pointer'>
                         Pages
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem2 ?'active-dropdown duration-200 ml-14 mt-4':'d-none' }>
-                        <li className='py-2 border-b'><Link>Pages 1</Link></li>
-                        <li className='py-2 border-b'><Link>Pages 2</Link></li>
-                        <li className='py-2'><Link>Pages 3</Link></li>
+                    <ul className={showItem2 ?'active-dropdown duration-200 text-[#9C9FA2] ml-14 mt-4':'d-none' }>
+                        <li className='py-2 border-b' onClick={showSidebar}><Link>Pages 1</Link></li>
+                        <li className='py-2 border-b' onClick={showSidebar}><Link>Pages 2</Link></li>
+                        <li className='py-2' onClick={showSidebar}><Link>Pages 3</Link></li>
                     </ul>
                 </li>
                 <li className='py-4 border-b' onClick={()=>setShowItem3(!showItem3)}>
-                    <span className='flex items-center ml-10 text-[18px] cursor-pointer'>
+                    <span className='flex items-center ml-10 text-[18px] text-[#9C9FA2] cursor-pointer'>
                         Blog
                         <IoMdAddCircle className='ml-1 font-extralight' />
                     </span>
-                    <ul className={showItem3 ?'active-dropdown duration-200 ml-14 mt-4':'d-none'}>
-                        <li className='py-2 border-b'><NavLink exact to='/blog'>All Blog</NavLink></li>
-                        <li className='py-2 border-b'><Link>Blog 2</Link></li>
-                        <li className='py-2'><Link>Blog 3</Link></li>
+                    <ul className={showItem3 ?'active-dropdown text-[#9C9FA2] duration-200 ml-14 mt-4':'d-none'}>
+                        <li className='py-2 border-b' onClick={showSidebar}><NavLink exact to='/blog'>All Blog</NavLink></li>
+                        <li className='py-2 border-b' onClick={showSidebar}><Link>Blog 2</Link></li>
+                        <li className='py-2' onClick={showSidebar}><Link>Blog 3</Link></li>
                     </ul>
                 </li>
-                <li className='py-4 border-b mr-0'>
-                    <NavLink exact to="/contact" className='ml-10 mr-0 text-[18px]'  activeClassName=' active-nav'>
+                <li className='py-4 border-b mr-0' onClick={showSidebar}>
+                    <NavLink exact to="/contact" className='ml-10 mr-0 text-[18px] text-[#9C9FA2]'  activeClassName=' active-nav'>
                         Contact
                     </NavLink>
                 </li>

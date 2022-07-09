@@ -27,7 +27,7 @@ function ConnectWallet() {
                             <div className='bg-[#2A2E3F] w-full text-center mx-auto rounded-3xl py-10 px-8'>
                                 <img className='mx-auto' src={uploads} alt='' />
                                 <p className='font-bold text-white mt-6 text-[20px]'>Create Multiple</p>
-                                <Link>
+                                <Link to='/upload/single'>
                                 <button className=' relative py-4 px-8 rounded-[10px] mt-5 text-white button-bg duration-200'>
                                 <label for='upload-photo' className=' cursor-pointer'>Create Multiple</label>
                                 <input id="upload-photo" type="file" />
